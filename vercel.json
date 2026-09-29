@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/(.*)\\.(png|webp|jpg|jpeg|ico|svg)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -37,11 +37,6 @@
     {
       "source": "/index",
       "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/guia-categorias-de-base",
-      "destination": "/categorias-de-base",
       "permanent": true
     },
     {

@@ -17,16 +17,16 @@
 <meta property="og:title" content="A família do atleta não precisa caminhar no escuro | Base de Campeão">
 <meta property="og:description" content="Educação, diagnóstico e acompanhamento para pais de atletas das categorias de base.">
 <meta property="og:url" content="https://basedecampeao.com.br/">
-<meta property="og:image" content="https://basedecampeao.com.br/assets/og-image.jpg">
+<meta property="og:image" content="https://basedecampeao.com.br/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="A família do atleta não precisa caminhar no escuro | Base de Campeão">
 <meta name="twitter:description" content="Educação, diagnóstico e acompanhamento para pais de atletas das categorias de base.">
-<meta name="twitter:image" content="https://basedecampeao.com.br/assets/og-image.jpg">
-<link rel="icon" href="/assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="twitter:image" content="https://basedecampeao.com.br/og-image.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
   "@id": "https://basedecampeao.com.br/#org",
   "name": "Base de Campeão",
   "url": "https://basedecampeao.com.br/",
-  "logo": "https://basedecampeao.com.br/assets/logo-512.png",
+  "logo": "https://basedecampeao.com.br/logo-512.png",
   "description": "Educação, diagnóstico e acompanhamento para famílias de atletas das categorias de base do futebol.",
   "sameAs": [
    "https://www.instagram.com/basedecampeao/"
@@ -318,7 +318,6 @@
   .pos.off { background: rgba(255,255,255,0.04); color: var(--text-muted); border: 1px solid var(--border-glass); }
 
   /* HUB */
-  .hub-section { padding: 10px 0 100px; position: relative; z-index: 2; }
   .hub-card { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 44px; }
   .hub-card h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); line-height: 1.05; margin: 14px 0; }
   .hub-card p { color: var(--text-muted); margin-bottom: 24px; }
@@ -475,14 +474,13 @@
 <header class="site-header" id="header">
   <div class="wrap nav-inner">
     <a href="/" class="brand-logo" aria-label="Base de Campeão, página inicial">
-      <img src="/assets/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+      <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
     </a>
     <ul class="nav-menu">
       <li><a href="#scout">BDC Scout</a></li>
       <li><a href="#diagnostico">Diagnóstico</a></li>
       <li><a href="#metodo">O Método</a></li>
       <li><a href="#produtos">Programas</a></li>
-      <li><a href="/categorias-de-base">Categorias de Base</a></li>
       <li><a href="#escolinhas">Para Escolinhas</a></li>
     </ul>
     <div class="nav-actions">
@@ -562,50 +560,6 @@
     <div><div class="stat-number">5</div><div class="stat-label">Programas para cada momento</div></div>
   </div>
 </div>
-
-<!-- ================= BDC SCOUT ================= -->
-<section class="scout-section" id="scout">
-  <div class="wrap scout-grid">
-    <div>
-      <div class="scout-kicker"><span class="badge badge-cyan"><i data-lucide="id-card"></i> BDC Scout</span><span class="badge badge-gold">O LinkedIn da Bola</span></div>
-      <h2>Toda a trajetória do atleta em <span class="hl">um perfil pronto pra ser visto</span></h2>
-      <p class="scout-lead">O BDC Scout é a plataforma onde o atleta organiza o currículo esportivo, registra cada jogo, reúne os melhores momentos e encontra oportunidades. O que hoje está espalhado no celular e na memória passa a ter endereço.</p>
-      <div class="scout-feats">
-        <div class="scout-feat"><i data-lucide="user-square"></i><div><b>Perfil e currículo</b><span>Posição, clube, características e trajetória em um só lugar.</span></div></div>
-        <div class="scout-feat"><i data-lucide="bar-chart-3"></i><div><b>Registro de jogo</b><span>Jogos, minutos, gols e evolução, temporada a temporada.</span></div></div>
-        <div class="scout-feat"><i data-lucide="clapperboard"></i><div><b>Melhores momentos</b><span>Vídeos e Instagram do atleta junto do currículo.</span></div></div>
-        <div class="scout-feat"><i data-lucide="radar"></i><div><b>Área de oportunidades</b><span>Avaliações e oportunidades publicadas na plataforma.</span></div></div>
-      </div>
-      <div style="display:flex; gap:14px; flex-wrap:wrap;">
-        <a href="/scout" class="btn btn-gold" data-gtm="scout-section"><i data-lucide="arrow-up-right"></i> Criar o perfil no BDC Scout</a>
-        <a href="#comparativo" class="btn btn-outline">Scout ou Comunidade?</a>
-      </div>
-      <p class="scout-note">Assinatura mensal. Para atletas de base, em transição e profissionais. <b>Atleta menor de idade: a família acompanha o perfil.</b></p>
-    </div>
-
-    <div class="profile-mock" aria-label="Exemplo ilustrativo de perfil no BDC Scout">
-      <span class="pm-tag">Perfil ilustrativo</span>
-      <div class="pm-head">
-        <div class="pm-avatar">PA</div>
-        <div>
-          <div class="pm-name">Pedro Almeida</div>
-          <div class="pm-sub">Lateral direito · Sub-15 · 14 anos · Porto Alegre, RS</div>
-        </div>
-        <i data-lucide="badge-check" class="pm-verify"></i>
-      </div>
-      <div class="pm-stats">
-        <div class="pm-stat"><b>24</b><span>Jogos</span></div>
-        <div class="pm-stat"><b>1.620</b><span>Minutos</span></div>
-        <div class="pm-stat"><b>3</b><span>Gols</span></div>
-        <div class="pm-stat"><b>7</b><span>Assist.</span></div>
-      </div>
-      <div class="pm-row"><i data-lucide="file-text"></i> Currículo esportivo <span class="pm-right">3 clubes · desde 2019</span></div>
-      <div class="pm-row"><i data-lucide="play-circle"></i> Melhores momentos <span class="pm-right">4 vídeos</span></div>
-      <div class="pm-row"><i data-lucide="camera"></i> Instagram do atleta <span class="pm-right">vinculado</span></div>
-      <div class="pm-opp"><i data-lucide="radar"></i><div><b>Nova oportunidade publicada</b><span>Avaliação para laterais, categoria Sub-15</span></div></div>
-    </div>
-  </div>
-</section>
 
 <!-- ================= DORES ================= -->
 <section class="realities-section">
@@ -715,6 +669,50 @@
   </div>
 </section>
 
+<!-- ================= BDC SCOUT ================= -->
+<section class="scout-section" id="scout">
+  <div class="wrap scout-grid">
+    <div>
+      <div class="scout-kicker"><span class="badge badge-cyan"><i data-lucide="id-card"></i> BDC Scout</span><span class="badge badge-gold">O LinkedIn da Bola</span></div>
+      <h2>Toda a trajetória do atleta em <span class="hl">um perfil pronto pra ser visto</span></h2>
+      <p class="scout-lead">O BDC Scout é a plataforma onde o atleta organiza o currículo esportivo, registra cada jogo, reúne os melhores momentos e encontra oportunidades. O que hoje está espalhado no celular e na memória passa a ter endereço.</p>
+      <div class="scout-feats">
+        <div class="scout-feat"><i data-lucide="user-square"></i><div><b>Perfil e currículo</b><span>Posição, clube, características e trajetória em um só lugar.</span></div></div>
+        <div class="scout-feat"><i data-lucide="bar-chart-3"></i><div><b>Registro de jogo</b><span>Jogos, minutos, gols e evolução, temporada a temporada.</span></div></div>
+        <div class="scout-feat"><i data-lucide="clapperboard"></i><div><b>Melhores momentos</b><span>Vídeos e Instagram do atleta junto do currículo.</span></div></div>
+        <div class="scout-feat"><i data-lucide="radar"></i><div><b>Área de oportunidades</b><span>Avaliações e oportunidades publicadas na plataforma.</span></div></div>
+      </div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="/scout" class="btn btn-gold" data-gtm="scout-section"><i data-lucide="arrow-up-right"></i> Criar o perfil no BDC Scout</a>
+        <a href="#comparativo" class="btn btn-outline">Scout ou Comunidade?</a>
+      </div>
+      <p class="scout-note">Assinatura mensal. Para atletas de base, em transição e profissionais. <b>Atleta menor de idade: a família acompanha o perfil.</b></p>
+    </div>
+
+    <div class="profile-mock" aria-label="Exemplo ilustrativo de perfil no BDC Scout">
+      <span class="pm-tag">Perfil ilustrativo</span>
+      <div class="pm-head">
+        <div class="pm-avatar">PA</div>
+        <div>
+          <div class="pm-name">Pedro Almeida</div>
+          <div class="pm-sub">Lateral direito · Sub-15 · 14 anos · Porto Alegre, RS</div>
+        </div>
+        <i data-lucide="badge-check" class="pm-verify"></i>
+      </div>
+      <div class="pm-stats">
+        <div class="pm-stat"><b>24</b><span>Jogos</span></div>
+        <div class="pm-stat"><b>1.620</b><span>Minutos</span></div>
+        <div class="pm-stat"><b>3</b><span>Gols</span></div>
+        <div class="pm-stat"><b>7</b><span>Assist.</span></div>
+      </div>
+      <div class="pm-row"><i data-lucide="file-text"></i> Currículo esportivo <span class="pm-right">3 clubes · desde 2019</span></div>
+      <div class="pm-row"><i data-lucide="play-circle"></i> Melhores momentos <span class="pm-right">4 vídeos</span></div>
+      <div class="pm-row"><i data-lucide="camera"></i> Instagram do atleta <span class="pm-right">vinculado</span></div>
+      <div class="pm-opp"><i data-lucide="radar"></i><div><b>Nova oportunidade publicada</b><span>Avaliação para laterais, categoria Sub-15</span></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= PROGRAMAS ================= -->
 <section class="products-section" id="produtos">
   <div class="wrap">
@@ -758,8 +756,9 @@
           <h3>Comunidade de Desenvolvimento</h3>
           <p class="desc">Um ciclo anual de desenvolvimento em grupo, com o Base de Campeão perto de você. BDC Scout incluído.</p>
           <ul class="feature-list">
-            <li><i data-lucide="check"></i> Contato direto com a equipe</li>
-            <li><i data-lucide="check"></i> Encontros ao vivo mensais</li>
+            <li><i data-lucide="check"></i> Mentoria em grupo com a equipe</li>
+            <li><i data-lucide="check"></i> Aulas ao vivo</li>
+            <li><i data-lucide="check"></i> Encontros com ex-atletas, atletas e profissionais do esporte</li>
             <li><i data-lucide="check"></i> Oportunidades trabalhadas de perto, com parceiros</li>
           </ul>
         </div>
@@ -815,31 +814,6 @@
   </div>
 </section>
 
-<!-- ================= CATEGORIAS DE BASE (hub) ================= -->
-<section class="hub-section" id="categorias-de-base">
-  <div class="wrap">
-    <div class="hub-card glass-card">
-      <div>
-        <span class="badge badge-cyan"><i data-lucide="map"></i> Guia gratuito</span>
-        <h2>Categorias de base dos clubes da Série A</h2>
-        <p>Como funcionam as categorias de base no Brasil, como os grandes clubes encontram atletas, o que esperar de uma peneira e os cuidados que a família precisa ter. Um guia para pais, com os 20 clubes da Série A.</p>
-        <a href="/categorias-de-base" class="btn btn-gold" data-gtm="hub-home"><i data-lucide="arrow-right"></i> Ler o guia completo</a>
-      </div>
-      <ul class="hub-clubs" aria-label="Clubes da Série A">
-        <li><a href="/categorias-de-base#flamengo">Base do Flamengo</a></li>
-        <li><a href="/categorias-de-base#palmeiras">Base do Palmeiras</a></li>
-        <li><a href="/categorias-de-base#corinthians">Base do Corinthians</a></li>
-        <li><a href="/categorias-de-base#sao-paulo">Base do São Paulo</a></li>
-        <li><a href="/categorias-de-base#gremio">Base do Grêmio</a></li>
-        <li><a href="/categorias-de-base#internacional">Base do Inter</a></li>
-        <li><a href="/categorias-de-base#santos">Base do Santos</a></li>
-        <li><a href="/categorias-de-base#fluminense">Base do Fluminense</a></li>
-        <li><a href="/categorias-de-base#clubes">Todos os 20 clubes</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- ================= COMPARATIVO ================= -->
 <section class="compare-section" id="comparativo">
   <div class="wrap">
@@ -859,7 +833,9 @@
           <tr><td>Melhores momentos e Instagram</td><td class="yes">✓</td><td class="hl yes">✓</td></tr>
           <tr><td>Área de oportunidades</td><td class="yes">✓</td><td class="hl yes">✓</td></tr>
           <tr><td>Aulas curtas gravadas</td><td class="yes">✓</td><td class="hl yes">✓</td></tr>
-          <tr><td>Encontros ao vivo mensais com convidados</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Mentoria em grupo com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Aulas ao vivo</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Encontros com ex-atletas, atletas e profissionais do esporte</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Comunidade de atletas, famílias e profissionais</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Contato direto com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Oportunidades trabalhadas de perto, com parceiros</td><td class="no">×</td><td class="hl yes">✓</td></tr>
@@ -917,7 +893,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="/assets/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+        <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
         <p style="font-size: 0.9rem; line-height: 1.6;">Educação, diagnóstico e acompanhamento para famílias de atletas de futebol de base.</p>
       </div>
       <div>
@@ -935,7 +911,6 @@
         <ul class="footer-links">
           <li><a href="#diagnostico">Simulador de jornada</a></li>
           <li><a href="#metodo">O método em 6 fases</a></li>
-          <li><a href="/categorias-de-base">Guia de categorias de base</a></li>
           <li><a href="https://go.hotmart.com/B107484794B">Manuais do Campeão</a></li>
         </ul>
       </div>
