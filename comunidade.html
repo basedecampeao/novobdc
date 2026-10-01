@@ -1,586 +1,1323 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<link rel="icon" href="/favicon.ico" sizes="any">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comunidade de Desenvolvimento | Base de Campeão</title>
-<meta name="description" content="A Comunidade de Desenvolvimento do Base de Campeão. Educação, acompanhamento e comunidade para famílias de atletas das categorias de base.">
+<title>Comunidade de Desenvolvimento | Gestão de carreira para atletas e famílias | Base de Campeão</title>
+<meta name="description" content="Saber onde o atleta está, que caminho seguir e com quem seguir. Um ciclo anual de gestão de carreira e evolução em grupo com a equipe do Base de Campeão. BDC Scout incluído.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://basedecampeao.com.br/comunidade">
+<meta name="theme-color" content="#031B2E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Base de Campeão">
+<meta property="og:title" content="Comunidade de Desenvolvimento | Base de Campeão">
+<meta property="og:description" content="Gestão de carreira, clareza e evolução contínua para atletas e famílias, com o Base de Campeão perto de você.">
+<meta property="og:url" content="https://basedecampeao.com.br/comunidade">
+<meta property="og:image" content="https://basedecampeao.com.br/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Comunidade de Desenvolvimento | Base de Campeão">
+<meta name="twitter:description" content="Gestão de carreira, clareza e evolução contínua para atletas e famílias.">
+<meta name="twitter:image" content="https://basedecampeao.com.br/og-image.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@1.47.0/dist/umd/lucide.min.js" defer></script>
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Comunidade de Desenvolvimento",
+  "description": "Ciclo anual de gestão de carreira e evolução em grupo para atletas e famílias, com mentoria em grupo, aulas ao vivo, encontros, rede de profissionais e BDC Scout incluído.",
+  "brand": { "@type": "Brand", "name": "Base de Campeão" },
+  "image": "https://basedecampeao.com.br/og-image.jpg",
+  "url": "https://basedecampeao.com.br/comunidade",
+  "offers": { "@type": "Offer", "name": "Ciclo anual", "price": "1997.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://basedecampeao.com.br/comunidade#entrar" }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+   { "@type": "ListItem", "position": 1, "name": "Base de Campeão", "item": "https://basedecampeao.com.br/" },
+   { "@type": "ListItem", "position": 2, "name": "Comunidade de Desenvolvimento", "item": "https://basedecampeao.com.br/comunidade" }
+  ]
+ }
+]
+</script>
 <style>
+
   :root {
-    --navy: #03273E;
-    --navy-2: #051A29;
-    --navy-3: #0A3350;
-    --glow: #1670A3;
+    --navy-main: #031B2E;
+    --navy-surface: #06243A;
+    --navy-card: rgba(8, 36, 58, 0.7);
     --gold: #DBA741;
-    --gold-2: #F0C169;
-    --cream: #F7F5F0;
-    --line: #E6E2D6;
-    --ink: #10161F;
-    --muted: #5C6B7A;
+    --gold-light: #F3C363;
+    --gold-glow: rgba(219, 167, 69, 0.25);
+    --cyan-accent: #00F2FE;
+    --text-main: #F4F7FA;
+    --text-muted: #94A8B8;
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --border-gold: rgba(219, 167, 65, 0.3);
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 80px; }
   body {
     font-family: 'DM Sans', -apple-system, sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
+    background-color: var(--navy-main);
+    color: var(--text-main);
+    line-height: 1.6;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; letter-spacing: 0.1px; }
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
   a { color: inherit; }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
-  .wrap-narrow { max-width: 720px; margin: 0 auto; padding: 0 28px; }
-  img, svg { display: block; max-width: 100%; }
+  img { max-width: 100%; display: block; }
+  i[data-lucide] { width: 18px; height: 18px; display: inline-block; }
 
-  .grain { position: relative; }
-  .grain::after {
-    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.05; mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  #hero-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1; pointer-events: none; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+  .wrap-narrow { max-width: 820px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+
+  .glass-card {
+    background: var(--navy-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-card.hoverable:hover {
+    border-color: rgba(219, 167, 65, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px var(--gold-glow);
+    transform: translateY(-3px);
   }
 
-  /* ===== NAV ===== */
-  header.site {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(3,39,62,0.9);
-    backdrop-filter: blur(10px) saturate(1.3);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; max-width: 1160px; margin: 0 auto; }
-  .nav-logo img { height: 42px; width: auto; display: block; }
-  .nav-cta {
-    background: var(--gold); color: var(--navy);
-    padding: 10px 20px; border-radius: 999px;
-    font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(219,167,65,0.35); }
-
-  /* ===== BUTTONS ===== */
+  /* BUTTONS */
   .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 14px 28px; border-radius: 999px;
+    font-size: 0.95rem; font-weight: 700; text-decoration: none;
+    cursor: pointer; border: none; transition: all 0.25s ease;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-gold { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); box-shadow: 0 8px 25px rgba(219, 167, 65, 0.3); }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(219, 167, 65, 0.45); filter: brightness(1.05); }
+  .btn-outline { background: rgba(255, 255, 255, 0.04); color: var(--text-main); border: 1px solid var(--border-glass); }
+  .btn-outline:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }
+
+  /* BADGES */
+  .badge {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 16px 28px; border-radius: 999px; font-size: 15.5px; font-weight: 700;
-    text-decoration: none; border: none; cursor: pointer; font-family: 'DM Sans', sans-serif;
-    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.15s;
+    padding: 6px 14px; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
   }
-  .btn:active { transform: scale(0.98); }
-  .btn-gold { background: var(--gold); color: var(--navy); }
-  .btn-gold:hover { background: var(--gold-2); box-shadow: 0 8px 24px rgba(219,167,65,0.3); transform: translateY(-1px); }
-  .btn-ghost-dark { background: rgba(255,255,255,0.06); color: #fff; border: 1px solid rgba(255,255,255,0.18); }
-  .btn-ghost-dark:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); }
-  .btn-block { width: 100%; justify-content: center; }
-  .btn-lg { padding: 19px 32px; font-size: 17px; }
+  .badge-gold { background: rgba(219, 167, 65, 0.12); border: 1px solid var(--border-gold); color: var(--gold-light); }
+  .badge-cyan { background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--cyan-accent); }
+  .badge-muted { background: rgba(255,255,255,0.05); border: 1px solid var(--border-glass); color: var(--text-muted); }
 
-  /* ===== HERO ===== */
-  .hero { position: relative; background: radial-gradient(120% 100% at 15% -10%, var(--navy-3) 0%, var(--navy) 45%, var(--navy-2) 100%); color: #fff; padding: 60px 0 90px; overflow: hidden; }
-  .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; }
-  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(219,167,65,0.12); border: 1px solid rgba(219,167,65,0.3); padding: 7px 16px; border-radius: 999px; font-size: 13px; color: var(--gold-2); font-weight: 600; margin-bottom: 26px; }
-  .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
-  .hero h1 { font-size: clamp(36px, 4.6vw, 54px); line-height: 1.03; letter-spacing: -0.5px; margin-bottom: 22px; }
-  .hero h1 .accent { color: var(--gold); }
-  .hero p.lead { font-size: 18px; color: #b9cbd8; max-width: 480px; margin-bottom: 34px; }
-  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
-  .hero-note { font-size: 13px; color: #7f9bad; }
+  /* HEADER */
+  header.site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; padding: 14px 0; transition: all 0.3s ease; }
+  header.site-header.scrolled { padding: 8px 0; background: rgba(3, 27, 46, 0.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-glass); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand-logo { display: flex; align-items: center; text-decoration: none; }
+  .brand-logo img { height: 48px; width: auto; }
+  .nav-menu { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-menu a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.2s; }
+  .nav-menu a:hover { color: #FFF; }
 
-  .hero-visual { position: relative; height: 420px; }
-  .path-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-  .hero-chip { position: absolute; bottom: 6%; left: 4%; background: rgba(6,26,42,0.75); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 16px 18px; max-width: 260px; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
-  .hero-chip .label { font-size: 11px; color: var(--gold-2); font-weight: 700; margin-bottom: 6px; }
-  .hero-chip .flow { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #cfe0ec; flex-wrap: wrap; }
-  .hero-chip .flow span:not(.sep) { background: rgba(255,255,255,0.08); padding: 3px 8px; border-radius: 6px; }
-  .hero-chip .flow .sep { color: rgba(255,255,255,0.3); }
+  /* HERO */
+  .hero-section {
+    position: relative; padding: 150px 0 90px; min-height: 100vh; display: flex; align-items: center;
+    background: radial-gradient(circle at 10% 20%, rgba(22, 112, 163, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(219, 167, 65, 0.1) 0%, transparent 50%);
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .hero-title { font-size: clamp(2.8rem, 5.5vw, 4.8rem); line-height: 0.95; margin: 20px 0 24px; font-weight: 800; }
+  .hero-title .highlight { background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 36px; max-width: 540px; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 30px; font-size: 0.85rem; color: var(--text-muted); }
+  .hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
+  .hero-trust i { color: var(--gold); }
 
-  @media (max-width: 940px) {
+  /* SIMULATOR */
+  .interactive-sim-card { padding: 28px; background: rgba(6, 36, 58, 0.85); border: 1px solid var(--border-gold); box-shadow: 0 30px 60px rgba(0,0,0,0.4); position: relative; overflow: hidden; }
+  .sim-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--border-glass); }
+  .sim-title { font-size: 1.15rem; font-weight: 700; color: #FFF; display: flex; align-items: center; gap: 8px; }
+  .form-group { margin-bottom: 16px; }
+  .form-label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .form-select { width: 100%; padding: 12px 16px; background: rgba(3, 27, 46, 0.7); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: #FFF; font-family: inherit; font-size: 0.92rem; outline: none; transition: border-color 0.2s; }
+  .form-select:focus { border-color: var(--gold); }
+  .form-select option { background: #06243A; }
+  .sim-result { margin-top: 20px; padding: 18px; border-radius: var(--radius-sm); background: rgba(219, 167, 65, 0.08); border: 1px dashed var(--gold); display: none; }
+  .sim-result.active { display: block; animation: fadeIn 0.4s ease; }
+  .sim-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .sim-row .lbl { font-size: 0.72rem; font-weight: 800; color: var(--gold-light); text-transform: uppercase; }
+  .sim-text { font-size: 0.92rem; color: #FFF; font-weight: 600; margin-bottom: 8px; }
+  .sim-extra { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px; }
+  .sim-reco { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--border-glass); }
+  .sim-reco .name { font-size: 0.9rem; color: var(--cyan-accent); font-weight: 700; }
+  .sim-reco a { font-size: 0.85rem; font-weight: 700; color: var(--gold-light); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* STATS */
+  .stats-banner { padding: 40px 0; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); background: rgba(3, 27, 46, 0.5); position: relative; z-index: 2; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+  .stat-number { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--gold-light); line-height: 1; }
+  .stat-label { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-top: 6px; }
+
+  /* SECTION HEAD */
+  .section-head { text-align: center; max-width: 700px; margin: 0 auto 56px; }
+  .section-title { font-size: clamp(2.2rem, 3.8vw, 3.4rem); line-height: 1.05; margin-top: 12px; }
+  .section-sub { color: var(--text-muted); margin-top: 12px; }
+
+  /* DORES */
+  .realities-section { padding: 120px 0; position: relative; z-index: 2; }
+  .bento-dores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .bent-card { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; cursor: pointer; }
+  .icon-wrap { width: 44px; height: 44px; border-radius: 12px; background: rgba(219, 167, 65, 0.1); color: var(--gold); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+  .bent-card h3 { font-size: 1.35rem; color: #FFF; margin-bottom: 10px; line-height: 1.15; }
+  .bent-card p { font-size: 0.9rem; color: var(--text-muted); }
+  .expand-btn { margin-top: 16px; font-size: 0.8rem; font-weight: 700; color: var(--gold); display: flex; align-items: center; gap: 6px; }
+
+  /* MÉTODO */
+  .method-section { padding: 120px 0; background: linear-gradient(180deg, var(--navy-main) 0%, var(--navy-surface) 50%, var(--navy-main) 100%); position: relative; z-index: 2; }
+  .method-stepper { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-bottom: 40px; }
+  .step-node { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); padding: 16px; text-align: center; cursor: pointer; transition: all 0.25s; font-family: inherit; color: inherit; }
+  .step-node.active { background: rgba(219, 167, 65, 0.15); border-color: var(--gold); transform: translateY(-4px); }
+  .step-node .num { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--gold); }
+  .step-node .title { font-size: 0.85rem; font-weight: 700; color: #FFF; margin-top: 4px; }
+  .method-display { padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; }
+  .method-display h3 { font-size: 2.2rem; color: var(--gold-light); margin: 12px 0 14px; }
+  .method-display p { font-size: 1.02rem; color: var(--text-muted); line-height: 1.7; }
+  .method-side { display: flex; flex-direction: column; gap: 14px; }
+  .method-box { background: rgba(3,27,46,0.6); padding: 22px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); }
+  .method-box h4 { color: #FFF; margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+  .method-box h4 i { color: var(--gold); }
+  .method-box p { font-size: 0.95rem; }
+  .method-box.sinal { border-color: var(--border-gold); background: rgba(219,167,65,0.06); }
+  .step-node.zero { border-style: dashed; }
+  .step-node.zero .num { color: var(--text-muted); }
+  .step-node.zero.active .num { color: var(--gold); }
+
+  /* MANUAL (isca) */
+  .manual-section { padding: 30px 0 100px; position: relative; z-index: 2; }
+  .manual-card { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; padding: 44px; background: linear-gradient(135deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.85) 60%); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); }
+  .manual-card h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); line-height: 1.05; margin: 14px 0 14px; }
+  .manual-card p { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 24px; max-width: 560px; }
+  .manual-cover { aspect-ratio: 3/4; max-width: 260px; margin: 0 auto; width: 100%; border-radius: 14px; background: linear-gradient(160deg, #0A3350 0%, #031B2E 100%); border: 1px solid var(--border-gold); box-shadow: 0 30px 60px rgba(0,0,0,0.45); padding: 26px 22px; display: flex; flex-direction: column; justify-content: space-between; transform: rotate(-3deg); }
+  .manual-cover .mc-top { font-size: 0.7rem; font-weight: 800; color: var(--gold-light); letter-spacing: 1px; text-transform: uppercase; }
+  .manual-cover .mc-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.9rem; font-weight: 800; text-transform: uppercase; line-height: 1; color: #FFF; }
+  .manual-cover .mc-title span { color: var(--gold); }
+  .manual-cover .mc-foot { font-size: 0.72rem; color: var(--text-muted); }
+
+  /* PRODUTOS */
+  .products-section { padding: 50px 0 110px; position: relative; z-index: 2; }
+  .filter-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 48px; flex-wrap: wrap; }
+  .tab-btn { padding: 10px 22px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-muted); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+  .tab-btn.active { background: var(--gold); color: var(--navy-main); border-color: var(--gold); }
+  .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .product-card { padding: 32px; display: flex; flex-direction: column; justify-content: space-between; }
+  .product-card.featured { grid-column: span 2; background: linear-gradient(135deg, rgba(8, 36, 58, 0.92) 0%, rgba(22, 112, 163, 0.2) 100%); border-color: var(--border-gold); }
+  .product-card.wide { grid-column: span 3; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .product-card h3 { font-size: 1.8rem; color: #FFF; margin: 14px 0 10px; line-height: 1.05; }
+  .product-card .desc { color: var(--text-muted); font-size: 0.93rem; }
+  .format-tag { font-size: 0.82rem; color: var(--gold-light); font-weight: 700; }
+  .who { font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; }
+  .who b { color: #FFF; font-weight: 600; }
+  .feature-list { list-style: none; margin: 20px 0; }
+  .feature-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+  .feature-list li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .card-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .posicoes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .pos { font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+  .pos.on { background: rgba(0,242,254,0.1); color: var(--cyan-accent); border: 1px solid rgba(0,242,254,0.3); }
+  .pos.off { background: rgba(255,255,255,0.04); color: var(--text-muted); border: 1px solid var(--border-glass); }
+
+  /* HUB */
+  .hub-card { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 44px; }
+  .hub-card h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); line-height: 1.05; margin: 14px 0; }
+  .hub-card p { color: var(--text-muted); margin-bottom: 24px; }
+  .hub-clubs { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hub-clubs a { display: block; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255,255,255,0.03); color: var(--text-main); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
+  .hub-clubs a:hover { border-color: var(--border-gold); color: var(--gold-light); }
+  .hub-clubs li:last-child { grid-column: span 2; }
+  .hub-clubs li:last-child a { text-align: center; color: var(--gold-light); border-color: var(--border-gold); }
+  @media (max-width: 1024px) { .hub-card { grid-template-columns: 1fr; padding: 28px; } }
+
+  /* COMPARATIVO */
+  .compare-section { padding: 20px 0 110px; position: relative; z-index: 2; }
+  .compare-wrap { overflow-x: auto; }
+  .compare-table { width: 100%; min-width: 640px; border-collapse: separate; border-spacing: 0; background: var(--navy-card); border: 1px solid var(--border-glass); border-radius: var(--radius-md); overflow: hidden; }
+  .compare-table th, .compare-table td { padding: 16px 18px; text-align: center; border-bottom: 1px solid var(--border-glass); font-size: 0.92rem; }
+  .compare-table th { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.1rem; color: #FFF; letter-spacing: 0.5px; background: rgba(3,27,46,0.6); }
+  .compare-table th.hl { color: var(--navy-main); background: var(--gold); }
+  .compare-table td:first-child, .compare-table th:first-child { text-align: left; color: var(--text-muted); }
+  .compare-table td.hl { background: rgba(219,167,65,0.07); }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .yes { color: var(--gold); font-weight: 800; }
+  .no { color: rgba(255,255,255,0.22); }
+  .compare-note { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 18px; }
+
+  /* ESCOLINHAS */
+  .b2b-section { padding: 110px 0; position: relative; z-index: 2; }
+  .b2b-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .b2b-grid h2 { font-size: clamp(2.1rem, 3.6vw, 3.1rem); line-height: 1.05; margin: 14px 0 16px; }
+  .b2b-grid > div > p { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 26px; }
+  .b2b-points { display: grid; gap: 14px; }
+  .b2b-point { padding: 22px; display: flex; gap: 16px; align-items: flex-start; }
+  .b2b-point h4 { font-size: 1.15rem; color: #FFF; margin-bottom: 4px; }
+  .b2b-point p { font-size: 0.9rem; color: var(--text-muted); }
+  .b2b-point .icon-wrap { flex-shrink: 0; }
+
+  /* DEPOIMENTO */
+  .dep-section { padding: 90px 0; position: relative; z-index: 2; }
+  .dep-card { padding: 48px; text-align: center; }
+  .dep-card blockquote { font-size: 1.25rem; line-height: 1.6; color: #FFF; font-weight: 500; margin: 20px 0 28px; }
+  .dep-who { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .dep-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gold); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; }
+  .dep-who .t { text-align: left; }
+  .dep-who b { display: block; color: #FFF; }
+  .dep-who span { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* MANIFESTO */
+  .manifesto-section { padding: 130px 0; text-align: center; position: relative; z-index: 2; background: radial-gradient(circle at 50% 50%, rgba(219,167,65,0.08) 0%, transparent 55%); }
+  .manifesto-quote { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.9rem, 3.6vw, 2.9rem); font-weight: 700; color: #FFF; line-height: 1.2; margin: 20px 0 30px; }
+  .manifesto-section p { color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; }
+  .manifesto-final { margin-top: 26px; color: var(--gold-light) !important; font-weight: 700; }
+
+  /* FOOTER */
+  footer.site-footer { padding: 80px 0 40px; background: #021324; border-top: 1px solid var(--border-glass); color: var(--text-muted); position: relative; z-index: 2; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 56px; }
+  .footer-grid h4 { color: #FFF; font-size: 1.1rem; margin-bottom: 18px; }
+  .footer-brand img { height: 60px; width: auto; margin-bottom: 18px; }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 12px; }
+  .footer-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom { border-top: 1px solid var(--border-glass); padding-top: 24px; text-align: center; font-size: 0.85rem; }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(2, 19, 36, 0.85); backdrop-filter: blur(12px); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+  .modal-content { background: var(--navy-surface); border: 1px solid var(--border-gold); border-radius: var(--radius-md); max-width: 620px; width: 100%; padding: 36px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5); max-height: 90vh; overflow-y: auto; }
+  .modal-close { position: absolute; top: 18px; right: 20px; background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.6rem; }
+  .modal-content h3 { font-size: 1.8rem; color: #FFF; margin: 16px 0; line-height: 1.1; }
+  .modal-content p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-visual { height: 300px; order: -1; }
-    .hero p.lead { max-width: 100%; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .product-card.featured { grid-column: span 2; }
+    .product-card.wide { grid-column: span 2; grid-template-columns: 1fr; }
+    .bento-dores { grid-template-columns: 1fr 1fr; }
+    .method-stepper { grid-template-columns: repeat(4, 1fr); }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .b2b-grid, .manual-card { grid-template-columns: 1fr; }
+    .nav-menu { display: none; }
+  }
+  @media (max-width: 640px) {
+    .hero-section { padding-top: 120px; }
+    .realities-section, .method-section, .b2b-section { padding: 70px 0; }
+    .manifesto-section { padding: 80px 0; }
+    .section-head { margin-bottom: 36px; }
+    .products-grid { grid-template-columns: 1fr; }
+    .product-card.featured, .product-card.wide { grid-column: span 1; }
+    .bento-dores { grid-template-columns: 1fr; }
+    .method-stepper { grid-template-columns: repeat(2, 1fr); }
+    .step-node.zero { grid-column: span 2; }
+    .method-display { grid-template-columns: 1fr; padding: 24px; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .manual-card, .dep-card { padding: 26px; }
+    .brand-logo img { height: 40px; }
+    .nav-actions .btn { padding: 10px 16px; font-size: 0.85rem; }
+    .nav-actions .btn span.long { display: none; }
   }
 
-  /* ===== LABELS ===== */
-  .label-line { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .label-line .bar { width: 26px; height: 3px; background: var(--gold); border-radius: 2px; }
-  .label-line span { font-size: 13px; font-weight: 700; color: var(--navy); }
-  .label-line.on-dark span { color: var(--gold-2); }
+  /* BDC SCOUT SPOTLIGHT */
+  .scout-section { padding: 110px 0; position: relative; z-index: 2; background: radial-gradient(circle at 85% 30%, rgba(0,242,254,0.07) 0%, transparent 45%), radial-gradient(circle at 10% 80%, rgba(219,167,65,0.08) 0%, transparent 45%); }
+  .scout-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .scout-kicker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+  .scout-grid h2 { font-size: clamp(2.4rem, 4.6vw, 4rem); line-height: 0.98; margin-bottom: 20px; }
+  .scout-grid h2 .hl { background: linear-gradient(135deg, var(--cyan-accent) 0%, #7AF7FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .scout-lead { color: var(--text-muted); font-size: 1.08rem; margin-bottom: 28px; max-width: 540px; }
+  .scout-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 30px; }
+  .scout-feat { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); }
+  .scout-feat i { color: var(--cyan-accent); flex-shrink: 0; margin-top: 2px; }
+  .scout-feat b { display: block; color: #FFF; font-size: 0.95rem; margin-bottom: 2px; }
+  .scout-feat span { font-size: 0.84rem; color: var(--text-muted); line-height: 1.45; }
+  .scout-note { font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; }
+  .scout-note b { color: var(--gold-light); }
 
-  /* ===== DORES ===== */
-  .dores { padding: 96px 0 90px; }
-  .dores-head { max-width: 680px; margin-bottom: 20px; }
-  .dores-head h2 { font-size: clamp(30px, 4vw, 42px); color: var(--navy); margin-bottom: 18px; letter-spacing: -0.4px; }
-  .dores-head p { color: var(--muted); font-size: 17px; max-width: 600px; }
-  .dores-head p.small { font-size: 15px; margin-top: 10px; }
-  .q-list { border-top: 1px solid var(--line); margin-top: 36px; }
-  .q-row { display: grid; grid-template-columns: 40px 1fr; gap: 20px; padding: 26px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
-  .q-row .warn { font-size: 20px; color: var(--gold); }
-  .q-row .q-body b { font-size: 18px; color: var(--ink); font-weight: 600; display: block; margin-bottom: 4px; }
-  .q-row .q-body p { font-size: 15px; color: var(--muted); max-width: 620px; }
-  @media (max-width: 600px) { .q-row { grid-template-columns: 26px 1fr; gap: 12px; } .q-row .q-body b { font-size: 16px; } }
+  .profile-mock { position: relative; padding: 26px; background: linear-gradient(160deg, rgba(10,51,80,0.95) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid rgba(0,242,254,0.25); border-radius: var(--radius-lg); box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 60px rgba(0,242,254,0.06); }
+  .pm-tag { position: absolute; top: -12px; right: 22px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; background: var(--navy-surface); color: var(--text-muted); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: 999px; }
+  .pm-head { display: flex; gap: 16px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border-glass); }
+  .pm-avatar { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; flex-shrink: 0; }
+  .pm-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: #FFF; line-height: 1.05; }
+  .pm-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 3px; }
+  .pm-verify { margin-left: auto; color: var(--cyan-accent); }
+  .pm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 18px 0; }
+  .pm-stat { text-align: center; padding: 12px 6px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+  .pm-stat b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; color: var(--gold-light); line-height: 1; }
+  .pm-stat span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .pm-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border-glass); font-size: 0.88rem; color: var(--text-main); }
+  .pm-row i { color: var(--gold); flex-shrink: 0; }
+  .pm-row .pm-right { margin-left: auto; font-size: 0.8rem; color: var(--text-muted); }
+  .pm-opp { margin-top: 10px; padding: 14px 16px; border-radius: 12px; background: rgba(0,242,254,0.08); border: 1px dashed rgba(0,242,254,0.4); display: flex; gap: 12px; align-items: center; }
+  .pm-opp i { color: var(--cyan-accent); flex-shrink: 0; }
+  .pm-opp b { display: block; color: #FFF; font-size: 0.9rem; }
+  .pm-opp span { font-size: 0.8rem; color: var(--text-muted); }
+  @media (max-width: 1024px) { .scout-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .scout-section { padding: 70px 0; }
+    .scout-feats { grid-template-columns: 1fr; }
+    .pm-stats { grid-template-columns: repeat(2, 1fr); }
+    .profile-mock { padding: 20px; }
+  }
+  .compare-table.two { min-width: 520px; }
 
-  /* ===== CONCEITO ===== */
-  .conceito { padding: 90px 0 100px; background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .conceito-head { max-width: 680px; margin-bottom: 46px; }
-  .conceito-head h2 { font-size: clamp(30px, 4vw, 42px); color: var(--navy); margin-bottom: 18px; letter-spacing: -0.4px; }
-  .conceito-head p { color: var(--muted); font-size: 16.5px; margin-bottom: 14px; }
-  .conceito-head p b { color: var(--ink); font-weight: 600; }
+  /* ================= SCOUT LP ================= */
+  .hl-cyan { background: linear-gradient(135deg, var(--cyan-accent) 0%, #7AF7FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .sc-hero { position: relative; padding: 140px 0 90px; min-height: 92vh; display: flex; align-items: center;
+    background: radial-gradient(circle at 85% 25%, rgba(0,242,254,0.10) 0%, transparent 42%), radial-gradient(circle at 10% 85%, rgba(219,167,65,0.10) 0%, transparent 45%); }
+  .sc-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .sc-kicker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+  .sc-title { font-size: clamp(2.6rem, 5.2vw, 4.5rem); line-height: 0.96; font-weight: 800; margin-bottom: 22px; }
+  .sc-lead { font-size: 1.12rem; color: var(--text-muted); max-width: 540px; margin-bottom: 30px; }
+  .sc-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
+  .sc-price-hint { font-size: 0.92rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+  .sc-price-hint b { color: var(--gold-light); }
+  .sc-price-hint i { color: var(--gold); }
 
-  .pilares-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--line); border: 1px solid var(--line); margin-bottom: 56px; }
-  .pilar { background: #fff; padding: 30px 24px; }
-  .pilar-num { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; font-weight: 700; color: var(--gold); margin-bottom: 12px; }
-  .pilar h3 { font-size: 18px; color: var(--navy); margin-bottom: 8px; }
-  .pilar p { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
-  @media (max-width: 860px) { .pilares-grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 520px) { .pilares-grid { grid-template-columns: 1fr; } }
+  /* profile mock */
+  .profile-mock { position: relative; padding: 26px; background: linear-gradient(160deg, rgba(10,51,80,0.95) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid rgba(0,242,254,0.25); border-radius: var(--radius-lg); box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 60px rgba(0,242,254,0.06); }
+  .pm-tag { position: absolute; top: -12px; right: 22px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; background: var(--navy-surface); color: var(--text-muted); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: 999px; }
+  .pm-head { display: flex; gap: 16px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border-glass); }
+  .pm-avatar { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; flex-shrink: 0; }
+  .pm-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: #FFF; line-height: 1.05; }
+  .pm-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 3px; }
+  .pm-verify { margin-left: auto; color: var(--cyan-accent); }
+  .pm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 18px 0; }
+  .pm-stat { text-align: center; padding: 12px 6px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+  .pm-stat b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; color: var(--gold-light); line-height: 1; }
+  .pm-stat span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .pm-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border-glass); font-size: 0.88rem; color: var(--text-main); }
+  .pm-row i { color: var(--gold); flex-shrink: 0; }
+  .pm-row .pm-right { margin-left: auto; font-size: 0.8rem; color: var(--text-muted); }
+  .pm-opp { margin-top: 10px; padding: 14px 16px; border-radius: 12px; background: rgba(0,242,254,0.08); border: 1px dashed rgba(0,242,254,0.4); display: flex; gap: 12px; align-items: center; }
+  .pm-opp i { color: var(--cyan-accent); flex-shrink: 0; }
+  .pm-opp b { display: block; color: #FFF; font-size: 0.9rem; }
+  .pm-opp span { font-size: 0.8rem; color: var(--text-muted); }
 
-  .formula-box { background: var(--navy); color: #fff; border-radius: 18px; padding: 44px 40px; text-align: center; position: relative; overflow: hidden; }
-  .formula-glow { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(219,167,65,0.14) 0%, transparent 70%); top: -140px; left: 50%; transform: translateX(-50%); pointer-events: none; }
-  .formula-label { position: relative; z-index: 2; font-size: 12.5px; font-weight: 700; color: var(--gold-2); margin-bottom: 26px; letter-spacing: 0.3px; }
-  .formula-visual { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 26px; }
-  .formula-op { font-size: 30px; color: #7f9bad; font-weight: 300; }
-  .formula-bloco { display: flex; flex-direction: column; align-items: center; }
-  .formula-valor { font-family: 'Barlow Condensed', sans-serif; font-size: 26px; font-weight: 700; color: #fff; }
-  .formula-desc { font-size: 12.5px; color: #a8bfcf; margin-top: 4px; }
-  .formula-potencial { display: flex; flex-direction: column; align-items: center; }
-  .formula-pot-label { font-size: 12px; color: #a8bfcf; }
-  .formula-pot-valor { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; font-weight: 700; color: var(--gold); }
-  .formula-box p.formula-txt { position: relative; z-index: 2; font-size: 15.5px; color: #cfe0ec; max-width: 560px; margin: 0 auto 16px; line-height: 1.65; }
-  .formula-autor { position: relative; z-index: 2; font-size: 12.5px; color: #7f9bad; }
+  /* generic section */
+  .sc-section { padding: 110px 0; position: relative; z-index: 2; }
+  .sc-section.alt { background: var(--navy-surface); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); }
 
-  /* ===== HOW (método, reused) ===== */
-  .how { padding: 90px 0 100px; background: var(--cream); }
-  .how-head { max-width: 640px; margin-bottom: 54px; }
-  .how-head h2 { font-size: clamp(30px, 4vw, 42px); color: var(--navy); margin-bottom: 14px; letter-spacing: -0.4px; }
-  .how-head p { color: var(--muted); font-size: 16.5px; }
-  .how-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--line); border: 1px solid var(--line); }
-  .how-step { background: #fff; padding: 34px 28px; }
-  .how-num { width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg, var(--navy) 0%, var(--navy-3) 100%); color: var(--gold-2); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 22px; }
-  .how-step h3 { font-size: 21px; color: var(--navy); margin-bottom: 9px; }
-  .how-step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
-  @media (max-width: 760px) { .how-steps { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 520px) { .how-steps { grid-template-columns: 1fr; } }
+  /* problema */
+  .pain-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .pain { padding: 26px 22px; }
+  .pain .icon-wrap { background: rgba(255,90,90,0.08); color: #FF8A8A; }
+  .pain h3 { font-size: 1.2rem; color: #FFF; margin-bottom: 8px; line-height: 1.15; }
+  .pain p { font-size: 0.9rem; color: var(--text-muted); }
+  .pain-turn { margin-top: 40px; text-align: center; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.5rem, 2.6vw, 2.1rem); font-weight: 700; color: #FFF; }
+  .pain-turn span { color: var(--cyan-accent); }
 
-  /* ===== INCLUI (spotlight escuro com chips grandes) ===== */
-  .inclui { position: relative; background: var(--navy); color: #fff; padding: 96px 0 100px; overflow: hidden; }
-  .inclui-glow { position: absolute; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(219,167,65,0.12) 0%, transparent 70%); top: -200px; right: -160px; pointer-events: none; }
-  .inclui-head { position: relative; z-index: 2; max-width: 660px; margin-bottom: 20px; }
-  .inclui-head h2 { font-size: clamp(30px, 4vw, 42px); margin-bottom: 16px; letter-spacing: -0.4px; }
-  .inclui-head p { color: #b9cbd8; font-size: 16.5px; }
+  /* vídeo */
+  .video-wrap { max-width: 980px; margin: 0 auto; }
+  .video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; background: linear-gradient(135deg, #0A3350 0%, #031B2E 100%); border: 1px solid rgba(0,242,254,0.25); box-shadow: 0 40px 80px rgba(0,0,0,0.45); cursor: pointer; }
+  .video-frame iframe, .video-frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center; padding: 24px;
+    background: radial-gradient(circle at 50% 45%, rgba(0,242,254,0.12) 0%, transparent 55%); }
+  .video-poster img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; }
+  .play-btn { position: relative; width: 92px; height: 92px; border-radius: 50%; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 12px rgba(219,167,65,0.15), 0 20px 40px rgba(0,0,0,0.4); transition: transform 0.2s; }
+  .video-frame:hover .play-btn { transform: scale(1.06); }
+  .play-btn i, .play-btn svg { width: 36px; height: 36px; margin-left: 4px; }
+  .video-poster .vp-title { position: relative; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: 800; font-size: clamp(1.3rem, 2.6vw, 2rem); color: #FFF; }
+  .video-poster .vp-sub { position: relative; font-size: 0.9rem; color: var(--text-muted); }
+  .video-points { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; margin-top: 26px; font-size: 0.9rem; color: var(--text-muted); }
+  .video-points span { display: inline-flex; align-items: center; gap: 8px; }
+  .video-points i { color: var(--cyan-accent); }
 
-  .feature-list { position: relative; z-index: 2; margin-top: 46px; border-top: 1px solid rgba(255,255,255,0.1); }
-  .feature-row { display: grid; grid-template-columns: 64px 1fr; gap: 26px; padding: 34px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
-  .feature-icon { width: 56px; height: 56px; border-radius: 14px; background: var(--gold); display: flex; align-items: center; justify-content: center; font-size: 24px; }
-  .feature-row h3 { font-size: 23px; color: #fff; margin-bottom: 10px; font-weight: 700; }
-  .feature-row p { font-size: 15px; color: #b9cbd8; line-height: 1.65; margin-bottom: 16px; max-width: 660px; }
-  .feature-tags { display: flex; gap: 10px; flex-wrap: wrap; }
-  .feature-tag { font-size: 12px; color: var(--gold-2); background: rgba(219,167,65,0.1); border: 1px solid rgba(219,167,65,0.25); padding: 5px 13px; border-radius: 999px; }
-  .feature-stat { display: inline-flex; align-items: baseline; gap: 8px; background: rgba(219,167,65,0.12); border: 1px solid rgba(219,167,65,0.3); border-radius: 10px; padding: 8px 14px; margin-bottom: 16px; }
-  .feature-stat b { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; color: var(--gold-2); }
-  .feature-stat span { font-size: 12.5px; color: #cfe0ec; }
-  @media (max-width: 560px) {
-    .feature-row { grid-template-columns: 48px 1fr; gap: 16px; padding: 26px 0; }
-    .feature-icon { width: 42px; height: 42px; font-size: 19px; border-radius: 11px; }
-    .feature-row h3 { font-size: 20px; }
+  /* recursos (feature rows) */
+  .feat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 50px 0; border-bottom: 1px solid var(--border-glass); }
+  .feat-row:last-child { border-bottom: none; }
+  .feat-row.rev .feat-copy { order: 2; }
+  .feat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 800; color: var(--cyan-accent); letter-spacing: 1px; margin-bottom: 10px; }
+  .feat-copy h3 { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.02; color: #FFF; margin-bottom: 14px; }
+  .feat-copy p { color: var(--text-muted); font-size: 1rem; margin-bottom: 18px; max-width: 480px; }
+  .feat-bullets { list-style: none; display: grid; gap: 10px; }
+  .feat-bullets li { display: flex; gap: 10px; font-size: 0.93rem; color: var(--text-main); }
+  .feat-bullets li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .screen { border-radius: var(--radius-md); background: linear-gradient(160deg, rgba(10,51,80,0.9) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid var(--border-glass); box-shadow: 0 30px 60px rgba(0,0,0,0.35); overflow: hidden; }
+  .screen-bar { display: flex; align-items: center; gap: 6px; padding: 12px 16px; border-bottom: 1px solid var(--border-glass); background: rgba(3,27,46,0.6); }
+  .screen-bar span { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,0.14); }
+  .screen-bar em { margin-left: 10px; font-style: normal; font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
+  .screen-body { padding: 20px; }
+  .screen img.print { display: block; width: 100%; height: auto; }
+  .cv-line { display: grid; grid-template-columns: 90px 1fr; gap: 12px; padding: 11px 0; border-bottom: 1px dashed var(--border-glass); font-size: 0.86rem; }
+  .cv-line:last-child { border-bottom: none; }
+  .cv-line b { color: var(--gold-light); font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; }
+  .cv-line span { color: var(--text-main); }
+  .cv-line small { display: block; color: var(--text-muted); font-size: 0.78rem; }
+  .game-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  .game-table th { text-align: left; font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; padding: 0 8px 10px; font-weight: 700; }
+  .game-table td { padding: 10px 8px; border-top: 1px solid var(--border-glass); color: var(--text-main); }
+  .game-table td.num { text-align: center; color: var(--gold-light); font-weight: 700; }
+  .game-table th.num { text-align: center; }
+  .game-total { margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .game-total div { text-align: center; padding: 10px; border-radius: 10px; background: rgba(0,242,254,0.07); }
+  .game-total b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; color: var(--cyan-accent); }
+  .game-total span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .thumb { position: relative; aspect-ratio: 16/10; border-radius: 12px; background: linear-gradient(135deg, #0E4466 0%, #06243A 100%); border: 1px solid var(--border-glass); display: flex; align-items: flex-end; padding: 10px; overflow: hidden; }
+  .thumb::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.06), transparent 60%); }
+  .thumb .tp { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-60%); width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; color: #FFF; }
+  .thumb .tl { position: relative; font-size: 0.75rem; color: #FFF; font-weight: 600; }
+  .ig-line { margin-top: 12px; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,0.04); font-size: 0.85rem; }
+  .ig-line i { color: var(--gold); }
+  .ig-line em { margin-left: auto; font-style: normal; color: var(--cyan-accent); font-weight: 700; font-size: 0.78rem; }
+  .opp-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); margin-bottom: 10px; }
+  .opp-item:last-child { margin-bottom: 0; }
+  .opp-ico { width: 38px; height: 38px; border-radius: 10px; background: rgba(0,242,254,0.1); color: var(--cyan-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .opp-item b { display: block; color: #FFF; font-size: 0.92rem; }
+  .opp-item span { font-size: 0.8rem; color: var(--text-muted); }
+  .opp-item .tag-new { margin-left: auto; font-size: 0.68rem; font-weight: 800; color: var(--navy-main); background: var(--cyan-accent); padding: 3px 8px; border-radius: 999px; text-transform: uppercase; flex-shrink: 0; }
+  .mini-feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+  .mini-feat { padding: 24px; display: flex; gap: 14px; align-items: flex-start; }
+  .mini-feat h4 { font-size: 1.1rem; color: #FFF; margin-bottom: 4px; }
+  .mini-feat p { font-size: 0.87rem; color: var(--text-muted); }
+  .mini-feat .icon-wrap { margin: 0; flex-shrink: 0; }
+
+  /* oportunidades */
+  .opp-types { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .opp-type { padding: 26px 22px; }
+  .opp-type .icon-wrap { background: rgba(0,242,254,0.1); color: var(--cyan-accent); }
+  .opp-type h3 { font-size: 1.2rem; color: #FFF; margin-bottom: 8px; }
+  .opp-type p { font-size: 0.88rem; color: var(--text-muted); }
+  .limit-box { margin-top: 30px; padding: 20px 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-gold); background: rgba(219,167,65,0.06); display: flex; gap: 14px; align-items: flex-start; font-size: 0.93rem; color: var(--text-muted); }
+  .limit-box i { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+  .limit-box b { color: #FFF; }
+
+  /* para quem */
+  .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .who-card { padding: 36px; }
+  .who-card h3 { font-size: 1.7rem; color: #FFF; margin: 14px 0 12px; line-height: 1.05; }
+  .who-card p { color: var(--text-muted); margin-bottom: 16px; }
+  .who-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 30px; }
+  .who-tags span { font-size: 0.85rem; font-weight: 600; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-main); }
+
+  /* passos */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step { padding: 30px; position: relative; }
+  .step .n { font-family: 'Barlow Condensed', sans-serif; font-size: 3.2rem; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px var(--gold); margin-bottom: 14px; }
+  .step h3 { font-size: 1.35rem; color: #FFF; margin-bottom: 8px; }
+  .step p { font-size: 0.92rem; color: var(--text-muted); }
+
+  /* planos */
+  .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; margin: 0 auto; align-items: stretch; }
+  .plan { padding: 36px; display: flex; flex-direction: column; position: relative; }
+  .plan.best { border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.9) 55%); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 40px var(--gold-glow); }
+  .plan-flag { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 16px; border-radius: 999px; white-space: nowrap; }
+  .plan h3 { font-size: 1.5rem; color: #FFF; }
+  .plan .plan-desc { font-size: 0.9rem; color: var(--text-muted); margin: 6px 0 22px; }
+  .plan .price { display: flex; align-items: baseline; gap: 6px; }
+  .plan .price .cur { font-size: 1.1rem; font-weight: 700; color: var(--text-muted); }
+  .plan .price .val { font-family: 'Barlow Condensed', sans-serif; font-size: 3.6rem; font-weight: 800; color: #FFF; line-height: 1; }
+  .plan .price .per { font-size: 0.95rem; color: var(--text-muted); }
+  .plan .equiv { font-size: 0.9rem; color: var(--gold-light); font-weight: 700; margin-top: 8px; min-height: 1.4em; }
+  .plan .save { display: inline-block; margin-top: 8px; font-size: 0.78rem; font-weight: 800; color: var(--navy-main); background: var(--cyan-accent); padding: 4px 10px; border-radius: 999px; }
+  .plan ul { list-style: none; margin: 24px 0 28px; display: grid; gap: 10px; flex-grow: 1; }
+  .plan li { display: flex; gap: 10px; font-size: 0.92rem; color: var(--text-main); }
+  .plan li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .plan .btn { width: 100%; }
+  .plans-note { text-align: center; font-size: 0.88rem; color: var(--text-muted); margin-top: 26px; }
+  .plans-note a { color: var(--gold-light); font-weight: 700; text-decoration: none; }
+
+  /* upsell comunidade */
+  .upsell { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 30px; align-items: center; padding: 36px 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-gold); background: linear-gradient(135deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.85) 60%); }
+  .upsell h3 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); color: #FFF; margin: 12px 0 10px; line-height: 1.05; }
+  .upsell p { color: var(--text-muted); }
+  .upsell ul { list-style: none; display: grid; gap: 8px; font-size: 0.9rem; color: var(--text-main); }
+  .upsell li { display: flex; gap: 8px; }
+  .upsell li i { color: var(--gold); width: 16px; height: 16px; margin-top: 3px; flex-shrink: 0; }
+
+  /* faq */
+  .faq { max-width: 820px; margin: 0 auto; }
+  .faq details { border: 1px solid var(--border-glass); border-radius: var(--radius-sm); background: var(--navy-card); margin-bottom: 12px; overflow: hidden; }
+  .faq summary { list-style: none; cursor: pointer; padding: 20px 22px; font-weight: 700; color: #FFF; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 1rem; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 1.4rem; color: var(--gold); flex-shrink: 0; transition: transform 0.2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { padding: 0 22px 20px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+  /* cta final */
+  .final-cta { padding: 120px 0; text-align: center; position: relative; z-index: 2; background: radial-gradient(circle at 50% 50%, rgba(0,242,254,0.08) 0%, transparent 55%); }
+  .final-cta h2 { font-size: clamp(2.2rem, 4.4vw, 3.6rem); line-height: 1; margin: 16px 0 18px; }
+  .final-cta p { color: var(--text-muted); font-size: 1.08rem; margin-bottom: 30px; }
+
+  /* barra fixa mobile */
+  .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 150; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); background: rgba(3,27,46,0.95); backdrop-filter: blur(14px); border-top: 1px solid var(--border-glass); display: none; align-items: center; justify-content: space-between; gap: 12px; transform: translateY(110%); transition: transform 0.3s ease; }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta .sp { font-size: 0.8rem; color: var(--text-muted); line-height: 1.3; }
+  .sticky-cta .sp b { display: block; color: #FFF; font-size: 0.95rem; }
+  .sticky-cta .btn { padding: 12px 18px; font-size: 0.88rem; }
+
+  @media (max-width: 1024px) {
+    .sc-hero-grid, .feat-row, .upsell { grid-template-columns: 1fr; }
+    .feat-row.rev .feat-copy { order: 0; }
+    .pain-grid, .opp-types { grid-template-columns: 1fr 1fr; }
+    .mini-feats { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .sticky-cta { display: flex; }
+    .plans, .who-grid, .steps { grid-template-columns: 1fr; }
+    .plan.best { order: -1; }
+  }
+  @media (max-width: 640px) {
+    .sc-hero { padding-top: 115px; min-height: auto; }
+    .sc-section, .final-cta { padding: 70px 0; }
+    .pain-grid, .opp-types { grid-template-columns: 1fr; }
+    .pm-stats { grid-template-columns: repeat(2, 1fr); }
+    .profile-mock { padding: 20px; }
+    .feat-row { padding: 36px 0; gap: 26px; }
+    .plan, .who-card { padding: 28px; }
+    .upsell { padding: 26px; }
+    .game-table th:nth-child(2), .game-table td:nth-child(2) { display: none; }
+    footer.site-footer { padding-bottom: 110px; }
   }
 
-  /* ===== TRANSFORMAÇÃO ===== */
-  .transf { padding: 96px 0 90px; background: var(--cream); }
-  .transf-head { max-width: 640px; margin-bottom: 50px; }
-  .transf-head h2 { font-size: clamp(30px, 4vw, 42px); color: var(--navy); margin-bottom: 14px; letter-spacing: -0.4px; }
-  .transf-head p { color: var(--muted); font-size: 16.5px; }
-  .transf-row { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 18px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); }
-  .transf-row:first-of-type { border-top: 1px solid var(--line); }
-  .t-lbl { font-size: 11px; font-weight: 700; letter-spacing: 0.4px; margin-bottom: 6px; }
-  .t-antes .t-lbl { color: #a3392f; }
-  .t-depois .t-lbl { color: #1e7a34; }
-  .t-antes p, .t-depois p { font-size: 15.5px; color: var(--ink); }
-  .t-sep { text-align: center; color: var(--gold); font-size: 18px; }
-  @media (max-width: 700px) {
-    .transf-row { grid-template-columns: 1fr; gap: 8px; text-align: left; }
-    .t-sep { display: none; }
+
+  /* ================= COMUNIDADE ================= */
+  .hl-gold { background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .cm-hero { background: radial-gradient(circle at 85% 25%, rgba(219,167,65,0.12) 0%, transparent 45%), radial-gradient(circle at 10% 85%, rgba(0,242,254,0.07) 0%, transparent 45%); }
+  .hero-proof { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 26px; }
+  .hero-proof div { font-size: 0.85rem; color: var(--text-muted); }
+  .hero-proof b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.9rem; color: var(--gold-light); line-height: 1; }
+
+  /* anel do ciclo */
+  .cycle-card { position: relative; padding: 28px; border-radius: var(--radius-lg); background: linear-gradient(160deg, rgba(10,51,80,0.92) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid var(--border-gold); box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 60px var(--gold-glow); }
+  .cycle-svg { width: 100%; max-width: 440px; margin: 0 auto; display: block; }
+  .cycle-legend { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+  .cycle-legend div { display: flex; gap: 10px; align-items: center; font-size: 0.85rem; color: var(--text-main); padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+  .cycle-legend i { color: var(--gold); flex-shrink: 0; }
+
+  /* contraste sozinho x comunidade */
+  .contrast { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .contrast-col { padding: 34px; }
+  .contrast-col h3 { font-size: 1.6rem; margin: 14px 0 18px; line-height: 1.05; }
+  .contrast-col ul { list-style: none; display: grid; gap: 12px; }
+  .contrast-col li { display: flex; gap: 12px; font-size: 0.95rem; color: var(--text-muted); }
+  .contrast-col li i { flex-shrink: 0; margin-top: 3px; width: 18px; height: 18px; }
+  .contrast-col.alone { background: rgba(255,255,255,0.02); }
+  .contrast-col.alone h3 { color: #C9D3DC; }
+  .contrast-col.alone li i { color: #FF8A8A; }
+  .contrast-col.together { border-color: var(--border-gold); background: linear-gradient(160deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.9) 55%); }
+  .contrast-col.together h3 { color: #FFF; }
+  .contrast-col.together li { color: var(--text-main); }
+  .contrast-col.together li i { color: var(--gold); }
+  .quote-line { margin-top: 44px; text-align: center; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: #FFF; line-height: 1.15; }
+  .quote-line span { color: var(--gold); }
+
+  /* ritmo do ciclo */
+  .rhythm { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; position: relative; }
+  .rhythm-step { padding: 28px 24px; position: relative; }
+  .rhythm-step .rs-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+  .rhythm-step .rs-n { font-family: 'Barlow Condensed', sans-serif; font-size: 2.6rem; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px var(--gold); }
+  .rhythm-step .icon-wrap { margin: 0; }
+  .rhythm-step h3 { font-size: 1.3rem; color: #FFF; margin-bottom: 8px; }
+  .rhythm-step p { font-size: 0.9rem; color: var(--text-muted); }
+  .rhythm-loop { margin-top: 22px; display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 0.95rem; color: var(--text-muted); text-align: center; }
+  .rhythm-loop i { color: var(--gold); flex-shrink: 0; }
+  .rhythm-loop b { color: #FFF; }
+
+  /* pilares (o que tem dentro) */
+  .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .pillar { padding: 30px 26px; display: flex; flex-direction: column; }
+  .pillar.big { grid-column: span 2; background: linear-gradient(135deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.9) 60%); border-color: var(--border-gold); }
+  .pillar .icon-wrap { width: 52px; height: 52px; border-radius: 14px; }
+  .pillar h3 { font-size: 1.45rem; color: #FFF; margin-bottom: 10px; line-height: 1.08; }
+  .pillar p { font-size: 0.93rem; color: var(--text-muted); margin-bottom: 14px; }
+  .pillar .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+  .pillar .chips span { font-size: 0.75rem; font-weight: 700; padding: 5px 11px; border-radius: 999px; background: rgba(219,167,65,0.1); border: 1px solid var(--border-gold); color: var(--gold-light); }
+  .pillar.scout .icon-wrap { background: rgba(0,242,254,0.1); color: var(--cyan-accent); }
+  .pillar.scout .chips span { background: rgba(0,242,254,0.08); border-color: rgba(0,242,254,0.3); color: var(--cyan-accent); }
+  .pillar .stat-pill { display: inline-flex; align-items: baseline; gap: 8px; align-self: flex-start; margin-bottom: 14px; padding: 8px 14px; border-radius: 10px; background: rgba(219,167,65,0.12); border: 1px solid var(--border-gold); }
+  .pillar .stat-pill b { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; color: var(--gold-light); }
+  .pillar .stat-pill span { font-size: 0.8rem; color: var(--text-main); }
+
+  /* oportunidades de perto */
+  .opp-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .opp-col { padding: 32px; }
+  .opp-col h3 { font-size: 1.4rem; color: #FFF; margin: 12px 0 14px; }
+  .opp-col ul { list-style: none; display: grid; gap: 10px; }
+  .opp-col li { display: flex; gap: 10px; font-size: 0.93rem; color: var(--text-muted); }
+  .opp-col li i { flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; color: var(--cyan-accent); }
+  .opp-col.near { border-color: var(--border-gold); background: linear-gradient(160deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.9) 55%); }
+  .opp-col.near li { color: var(--text-main); }
+  .opp-col.near li i { color: var(--gold); }
+
+  /* antes x depois */
+  .ba { max-width: 980px; margin: 0 auto; }
+  .ba-row { display: grid; grid-template-columns: 1fr 44px 1fr; gap: 16px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--border-glass); }
+  .ba-row:first-child { border-top: 1px solid var(--border-glass); }
+  .ba-lbl { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+  .ba-antes .ba-lbl { color: #FF8A8A; }
+  .ba-depois .ba-lbl { color: var(--gold-light); }
+  .ba-antes p { color: var(--text-muted); font-size: 0.97rem; }
+  .ba-depois p { color: #FFF; font-size: 0.97rem; font-weight: 600; }
+  .ba-sep { text-align: center; color: var(--gold); }
+
+  /* depoimento */
+  .dep-card { padding: 48px; text-align: center; max-width: 860px; margin: 0 auto; }
+  .dep-card blockquote { font-size: 1.25rem; line-height: 1.6; color: #FFF; font-weight: 500; margin: 20px 0 28px; }
+  .dep-who { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .dep-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gold); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; }
+  .dep-who .t { text-align: left; }
+  .dep-who b { display: block; color: #FFF; }
+  .dep-who span { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* não é pra */
+  .notfor { max-width: 860px; margin: 26px auto 0; padding: 24px 28px; }
+  .notfor h4 { font-size: 1.15rem; color: #FFF; margin-bottom: 12px; display: flex; gap: 10px; align-items: center; }
+  .notfor h4 i { color: #FF8A8A; }
+  .notfor ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+  .notfor li { font-size: 0.9rem; color: var(--text-muted); display: flex; gap: 8px; }
+  .notfor li::before { content: "×"; color: #FF8A8A; font-weight: 800; }
+
+  /* oferta */
+  .offer { max-width: 760px; margin: 0 auto; padding: 44px; border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.92) 55%); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 50px var(--gold-glow); }
+  .offer-head { text-align: center; }
+  .offer-head h3 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: #FFF; margin: 14px 0 8px; }
+  .offer-head p { color: var(--text-muted); }
+  .offer-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; margin: 30px 0; }
+  .offer-list li { display: flex; gap: 10px; font-size: 0.93rem; color: var(--text-main); }
+  .offer-list li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .offer-price { text-align: center; padding: 26px 0; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); margin-bottom: 26px; }
+  .offer-price .lbl { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; }
+  .offer-price .val { font-family: 'Barlow Condensed', sans-serif; font-size: 4.2rem; font-weight: 800; color: #FFF; line-height: 1.05; }
+  .offer-price .val small { font-size: 1.4rem; color: var(--text-muted); font-weight: 700; }
+  .offer-price .eq { font-size: 0.95rem; color: var(--gold-light); font-weight: 700; }
+  .offer-actions { display: grid; gap: 12px; }
+  .offer-actions .btn { width: 100%; }
+  .offer-note { text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; }
+
+  .sticky-cta .btn { white-space: nowrap; flex-shrink: 0; }
+  .sticky-cta .sp { min-width: 0; }
+  /* jornada 7 fases */
+  .journey { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-bottom: 14px; }
+  .jn { position: relative; padding: 18px 12px; border-radius: var(--radius-sm); text-align: center; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); }
+  .jn .n { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; line-height: 1; color: rgba(255,255,255,0.3); }
+  .jn .t { font-size: 0.82rem; font-weight: 700; color: var(--text-muted); margin-top: 6px; }
+  .jn.inside { border-color: var(--border-gold); background: rgba(219,167,65,0.08); }
+  .jn.inside .n { color: var(--gold); }
+  .jn.inside .t { color: #FFF; }
+  .jn.entry { border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.22) 0%, rgba(8,36,58,0.9) 100%); box-shadow: 0 0 30px var(--gold-glow); }
+  .jn.entry .n { color: var(--gold-light); }
+  .jn.entry .t { color: #FFF; }
+  .cm-hero .sc-title { font-size: clamp(2.3rem, 4.3vw, 3.7rem); }
+  .jn-flag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; background: var(--gold); color: var(--navy-main); padding: 3px 9px; border-radius: 999px; }
+  .journey-bands { display: grid; grid-template-columns: 3fr 4fr; gap: 10px; margin-bottom: 44px; }
+  .jb { font-size: 0.8rem; font-weight: 700; text-align: center; padding: 9px; border-radius: 999px; }
+  .jb.before { color: var(--text-muted); background: rgba(255,255,255,0.03); border: 1px dashed var(--border-glass); }
+  .jb.inside { color: var(--navy-main); background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .jb.inside i, .jb.inside svg { width: 15px; height: 15px; }
+  .entry-note { max-width: 820px; margin: 0 auto 40px; text-align: center; color: var(--text-muted); font-size: 1rem; }
+  .entry-note b { color: #FFF; }
+  .phase-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .phase-card { padding: 26px 22px; }
+  .phase-card .pc-n { font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 800; color: var(--gold); letter-spacing: 0.6px; }
+  .phase-card h3 { font-size: 1.5rem; color: #FFF; margin: 4px 0 10px; }
+  .phase-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
+  .phase-card .pc-q { font-size: 0.85rem; color: var(--gold-light); font-weight: 700; font-style: italic; }
+
+  /* o que falamos */
+  .topics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .topic { padding: 28px 24px; }
+  .topic .icon-wrap { margin-bottom: 16px; }
+  .topic h3 { font-size: 1.3rem; color: #FFF; margin-bottom: 8px; line-height: 1.1; }
+  .topic p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 14px; }
+  .topic ul { list-style: none; display: grid; gap: 7px; }
+  .topic li { font-size: 0.85rem; color: var(--text-main); display: flex; gap: 8px; }
+  .topic li::before { content: "•"; color: var(--gold); font-weight: 800; }
+  .topic.lead { border-color: var(--border-gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.9) 55%); }
+  .topics-foot { margin-top: 30px; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .topics-foot span { font-size: 0.85rem; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-main); display: inline-flex; gap: 8px; align-items: center; }
+  .topics-foot i, .topics-foot svg { color: var(--gold); width: 16px; height: 16px; }
+
+  @media (max-width: 1024px) {
+    .phase-cards, .topics { grid-template-columns: 1fr 1fr; }
+    .journey { grid-template-columns: repeat(4, 1fr); row-gap: 20px; }
+    .journey-bands { display: none; }
   }
-
-  /* ===== DEPOIMENTO ===== */
-  .dep { padding: 90px 0; background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-  .dep-card { max-width: 760px; margin: 0 auto; text-align: center; }
-  .dep-aspas { font-family: 'Barlow Condensed', sans-serif; font-size: 60px; color: var(--gold); line-height: 1; margin-bottom: 8px; }
-  .dep-card p.txt { font-size: 20px; color: var(--ink); line-height: 1.55; margin-bottom: 30px; font-weight: 500; }
-  .dep-info { display: flex; align-items: center; justify-content: center; gap: 14px; }
-  .dep-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--gold-2); display: flex; align-items: center; justify-content: center; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; font-size: 16px; }
-  .dep-info .who { text-align: left; }
-  .dep-info .who b { display: block; font-size: 15px; color: var(--navy); }
-  .dep-info .who span { font-size: 13px; color: var(--muted); }
-
-  /* ===== CRENÇA / FRASE ===== */
-  .crenca { position: relative; background: var(--navy-2); color: #fff; padding: 120px 0; text-align: center; overflow: hidden; }
-  .crenca-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(219,167,65,0.1) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none; }
-  .crenca .wrap-narrow { position: relative; z-index: 2; max-width: 680px; }
-  .crenca p.body { font-size: 16.5px; color: #a8bfcf; margin-bottom: 30px; line-height: 1.75; }
-  .crenca .frase { font-size: clamp(24px, 3.6vw, 34px); font-family: 'Barlow Condensed', sans-serif; font-weight: 700; color: #fff; line-height: 1.3; }
-  .crenca .frase .g { color: var(--gold-2); }
-
-  /* ===== OFERTA ===== */
-  .oferta { position: relative; background: var(--navy); color: #fff; padding: 100px 0 110px; overflow: hidden; }
-  .oferta-glow { position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(219,167,65,0.14) 0%, transparent 70%); bottom: -220px; left: 50%; transform: translateX(-50%); pointer-events: none; }
-  .oferta-inner { position: relative; z-index: 2; max-width: 620px; margin: 0 auto; text-align: center; }
-  .oferta-tag { display: inline-block; background: rgba(219,167,65,0.15); color: var(--gold-2); border: 1px solid rgba(219,167,65,0.3); font-size: 12.5px; font-weight: 700; padding: 6px 16px; border-radius: 999px; margin-bottom: 24px; }
-  .oferta h2 { font-size: clamp(30px, 4.2vw, 44px); margin-bottom: 16px; letter-spacing: -0.4px; }
-  .oferta > .oferta-inner > p.sub { font-size: 16.5px; color: #b9cbd8; margin-bottom: 40px; }
-  .incluso-list { text-align: left; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 30px 28px; margin-bottom: 30px; }
-  .incluso-item { display: flex; gap: 12px; padding: 11px 0; font-size: 14.5px; color: #dbe7ee; }
-  .incluso-item:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .incluso-item .check { color: var(--gold); font-weight: 700; flex-shrink: 0; }
-  .incluso-item b { color: #fff; }
-  .preco-box { margin-bottom: 30px; }
-  .preco-box .plano { font-size: 13px; color: #7f9bad; margin-bottom: 6px; }
-  .preco-box .valor { font-family: 'Barlow Condensed', sans-serif; font-size: 56px; font-weight: 700; color: #fff; }
-  .preco-box .cond { font-size: 13.5px; color: #a8bfcf; margin-top: 4px; }
-  .oferta-note { font-size: 13px; color: #7f9bad; margin-top: 16px; }
-
-  /* ===== FOOTER ===== */
-  footer.site { background: var(--navy); color: #82a0b3; padding: 56px 0 30px; border-top: 1px solid rgba(255,255,255,0.06); }
-  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-  .footer-brand img { height: 50px; width: auto; margin-bottom: 14px; }
-  .footer-col h5 { font-size: 12.5px; font-weight: 700; color: #fff; margin-bottom: 16px; letter-spacing: 0.3px; }
-  .footer-col a { display: block; font-size: 14px; color: #82a0b3; text-decoration: none; margin-bottom: 11px; }
-  .footer-col a:hover { color: #fff; }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 22px; font-size: 12.5px; color: #5d7889; }
-  @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) {
+    .phase-cards, .topics { grid-template-columns: 1fr; }
+    .journey { grid-template-columns: repeat(2, 1fr); }
+    .jn.zero { grid-column: span 2; }
+  }
+  @media (max-width: 1024px) {
+    .rhythm { grid-template-columns: 1fr 1fr; }
+    .pillars { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 760px) {
+    .contrast, .opp-compare, .pillars, .rhythm { grid-template-columns: 1fr; }
+    .pillar.big { grid-column: span 1; }
+    .offer-list, .notfor ul { grid-template-columns: 1fr; }
+    .ba-row { grid-template-columns: 1fr; gap: 6px; }
+    .ba-sep { display: none; }
+  }
+  @media (max-width: 640px) {
+    .offer, .dep-card, .contrast-col, .opp-col { padding: 26px; }
+    .offer-price .val { font-size: 3.4rem; }
+    .cycle-legend { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<!-- ================= NAV ================= -->
-<header class="site">
-  <div class="nav">
-    <a href="/" class="nav-logo"><img src="/logo-128.webp" alt="Base de Campeão"></a>
-    <a href="#oferta" class="nav-cta">Quero fazer parte</a>
+<canvas id="hero-canvas"></canvas>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="wrap nav-inner">
+    <a href="/" class="brand-logo" aria-label="Base de Campeão, página inicial">
+      <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#por-que">Por que comunidade</a></li>
+      <li><a href="#metodo">O método</a></li>
+      <li><a href="#temas">O que falamos</a></li>
+      <li><a href="#dentro">O que tem dentro</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#entrar" class="btn btn-gold" data-gtm="nav-entrar"><i data-lucide="users"></i><span>Entrar<span class="long"> na Comunidade</span></span></a>
+    </div>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero grain">
-  <div class="wrap hero-grid">
+<section class="sc-hero cm-hero">
+  <div class="wrap sc-hero-grid">
     <div>
-      <div class="hero-badge"><span class="dot"></span>Antes BDC Scout, agora Comunidade de Desenvolvimento</div>
-      <h1>Formação, acompanhamento e comunidade.<br><span class="accent">O ano inteiro, com você.</span></h1>
-      <p class="lead">A Comunidade de Desenvolvimento do Base de Campeão forma famílias conscientes para guiar atletas das categorias de base com educação, estratégia e direção.</p>
-      <div class="hero-ctas">
-        <a href="#oferta" class="btn btn-gold">Quero fazer parte da Comunidade</a>
-        <a href="#inclui" class="btn btn-ghost-dark">Ver o que está incluído</a>
+      <div class="sc-kicker"><span class="badge badge-gold"><i data-lucide="users"></i> Comunidade de Desenvolvimento</span><span class="badge badge-cyan">Gestão de carreira</span></div>
+      <h1 class="sc-title">Onde o atleta está. Que caminho seguir. <span class="hl-gold">Com quem seguir.</span></h1>
+      <p class="sc-lead">A Comunidade de Desenvolvimento é um ciclo anual de gestão de carreira e evolução em grupo, com a equipe do Base de Campeão perto de você. Clareza para construir a base de verdade e conduzir cada decisão da trajetória do atleta.</p>
+      <div class="sc-ctas">
+        <a href="#entrar" class="btn btn-gold" data-gtm="hero-entrar"><i data-lucide="arrow-down"></i> Quero fazer parte</a>
+        <a href="#metodo" class="btn btn-outline" data-gtm="hero-metodo"><i data-lucide="refresh-cw"></i> Ver como funciona o ciclo</a>
       </div>
-      <div class="hero-note">Acesso imediato · conteúdo disponível agora + novos toda semana</div>
+      <div class="hero-proof">
+        <div><b>+2.500</b>famílias orientadas</div>
+        <div><b>+40</b>encontros ao vivo realizados</div>
+        <div><b>12 meses</b>de acompanhamento</div>
+      </div>
     </div>
-    <div class="hero-visual">
-      <svg class="path-svg" viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M40 400 C 90 340, 70 260, 130 220 C 190 180, 190 260, 250 220 C 310 180, 300 110, 370 70" stroke="url(#pathgrad)" stroke-width="2" stroke-dasharray="1 10" stroke-linecap="round"/>
-        <circle cx="40" cy="400" r="5" fill="#2A4A5F"/>
-        <circle cx="130" cy="220" r="4" fill="#3D6480"/>
-        <circle cx="250" cy="220" r="4" fill="#5F86A0"/>
-        <circle cx="370" cy="70" r="8" fill="#DBA741"/>
-        <circle cx="370" cy="70" r="16" fill="#DBA741" opacity="0.25"/>
-        <circle cx="370" cy="70" r="26" fill="#DBA741" opacity="0.1"/>
+
+    <div class="cycle-card" aria-label="O ciclo contínuo da Comunidade de Desenvolvimento">
+      <svg class="cycle-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="pathgrad" x1="40" y1="400" x2="370" y2="70" gradientUnits="userSpaceOnUse">
-            <stop stop-color="#2A4A5F"/>
-            <stop offset="1" stop-color="#DBA741"/>
+          <linearGradient id="ring" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F3C363"/><stop offset="1" stop-color="#DBA741" stop-opacity="0.35"/>
           </linearGradient>
+          <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F3C363"/></marker>
         </defs>
+        <circle cx="200" cy="200" r="138" stroke="rgba(255,255,255,0.06)" stroke-width="22"/>
+        <path d="M200 62 A138 138 0 0 1 338 200" stroke="url(#ring)" stroke-width="3" marker-end="url(#arr)"/>
+        <path d="M338 200 A138 138 0 0 1 200 338" stroke="url(#ring)" stroke-width="3" marker-end="url(#arr)"/>
+        <path d="M200 338 A138 138 0 0 1 62 200" stroke="url(#ring)" stroke-width="3" marker-end="url(#arr)"/>
+        <path d="M62 200 A138 138 0 0 1 200 62" stroke="url(#ring)" stroke-width="3" marker-end="url(#arr)"/>
+        <g font-family="Barlow Condensed, sans-serif" font-weight="800" text-anchor="middle">
+          <circle cx="200" cy="62" r="30" fill="#06243A" stroke="#DBA741" stroke-width="2"/><text x="200" y="69" fill="#F3C363" font-size="20">03</text>
+          <circle cx="338" cy="200" r="30" fill="#06243A" stroke="#DBA741" stroke-width="2"/><text x="338" y="207" fill="#F3C363" font-size="20">04</text>
+          <circle cx="200" cy="338" r="30" fill="#06243A" stroke="#DBA741" stroke-width="2"/><text x="200" y="345" fill="#F3C363" font-size="20">05</text>
+          <circle cx="62" cy="200" r="30" fill="#06243A" stroke="#DBA741" stroke-width="2"/><text x="62" y="207" fill="#F3C363" font-size="20">06</text>
+          <text x="200" y="192" fill="#FFFFFF" font-size="30">CICLO</text>
+          <text x="200" y="222" fill="#FFFFFF" font-size="30">CONTÍNUO</text>
+        </g>
+        <text x="200" y="250" fill="#94A8B8" font-family="DM Sans, sans-serif" font-size="13" text-anchor="middle">da fase 3 à fase 6</text>
       </svg>
-      <div class="hero-chip">
-        <div class="label">O MÉTODO EM SEIS FASES</div>
-        <div class="flow">
-          <span>Despertar</span><span class="sep">→</span>
-          <span>Compreender</span><span class="sep">→</span>
-          <span>Estruturar</span><span class="sep">→</span>
-          <span>Personalizar</span><span class="sep">→</span>
-          <span>Desenvolver</span><span class="sep">→</span>
-          <span>Evoluir</span>
-        </div>
+      <div class="cycle-legend">
+        <div><i data-lucide="layout-grid"></i> 03 · Estruturar</div>
+        <div><i data-lucide="user-check"></i> 04 · Personalizar</div>
+        <div><i data-lucide="trending-up"></i> 05 · Desenvolver</div>
+        <div><i data-lucide="repeat"></i> 06 · Evoluir</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= DORES ================= -->
-<section class="dores">
+<!-- ================= POR QUE COMUNIDADE ================= -->
+<section class="sc-section alt" id="por-que">
   <div class="wrap">
-    <div class="dores-head">
-      <div class="label-line"><span class="bar"></span><span>A realidade da maioria</span></div>
-      <h2>Você ama seu filho. Mas caminha no escuro.</h2>
-      <p>Você leva nos treinos, acompanha os jogos, faz sacrifícios. Mas quando chega a hora de tomar uma decisão importante sobre a carreira dele, você não sabe o que fazer.</p>
-      <p class="small">Não é falta de amor. É falta de informação certa, no momento certo.</p>
+    <div class="section-head">
+      <span class="badge badge-gold">Por que uma comunidade</span>
+      <h2 class="section-title">Conteúdo você encontra em qualquer lugar. Direção, não.</h2>
+      <p class="section-sub">A diferença entre caminhar sozinho e caminhar acompanhado aparece nas decisões que ninguém ensina num vídeo.</p>
     </div>
-    <div class="q-list">
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Meu filho está no lugar certo?</b><p>O clube ou escolinha que ele está realmente forma atletas, ou só ocupa o tempo dele?</p></div></div>
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Ele só precisa de uma oportunidade?</b><p>Ou existe algo que precisa ser desenvolvido antes de ele aparecer para o mundo?</p></div></div>
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Posso assinar esse contrato?</b><p>Alguém te apresentou uma proposta e você não sabe se confia, se espera, se é a hora certa.</p></div></div>
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Meu filho já precisa de empresário?</b><p>Você sente que todo mundo já tem um agente, mas não sabe se é a hora ou se vai ser uma cilada.</p></div></div>
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Estou investindo no que importa?</b><p>Personal, academia, mais clube. Você gasta sem saber o que realmente faz diferença.</p></div></div>
-      <div class="q-row"><div class="warn">•</div><div class="q-body"><b>Como apoio sem pressionar?</b><p>Você quer estar presente do jeito certo, mas tem medo de fazer mais mal do que bem.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONCEITO ================= -->
-<section class="conceito">
-  <div class="wrap">
-    <div class="conceito-head">
-      <div class="label-line"><span class="bar"></span><span>O que é a Comunidade</span></div>
-      <h2>Um futebol melhor começa com melhores pessoas.</h2>
-      <p>O Base de Campeão existe por uma crença simples: <b>um futebol melhor começa com pessoas melhores. E pessoas melhores se formam dentro de casa.</b></p>
-      <p>A base de um atleta não está só no clube ou na escolinha. Está também na família. É em casa que se constrói o caráter, a disciplina, o equilíbrio emocional, tudo que sustenta uma carreira quando o caminho fica difícil.</p>
-      <p>Antes de atleta, existe uma criança em desenvolvimento. Entender esse desenvolvimento, o que ela precisa em cada fase, é responsabilidade do pai, não só da escolinha.</p>
-    </div>
-
-    <div class="pilares-grid">
-      <div class="pilar"><div class="pilar-num">01</div><h3>Fases de desenvolvimento</h3><p>O que seu filho precisa em cada fase. Como a maturação física e emocional define o que deve ser trabalhado.</p></div>
-      <div class="pilar"><div class="pilar-num">02</div><h3>Perfil e mentalidade</h3><p>Como conhecer o perfil comportamental do seu filho, o que o motiva, o que o trava, e como ser o suporte certo.</p></div>
-      <div class="pilar"><div class="pilar-num">03</div><h3>Como o futebol funciona</h3><p>Categorias, contratos, agentes, peneiras, clubes. O jogo que acontece fora de campo, que o pai precisa dominar.</p></div>
-      <div class="pilar"><div class="pilar-num">04</div><h3>Decisões inteligentes</h3><p>Academia, personal, treino extra, nutrição, sono. Como investir no que realmente importa em cada momento.</p></div>
-    </div>
-
-    <div class="formula-box">
-      <div class="formula-glow"></div>
-      <div class="formula-label">A FÓRMULA QUE MUDA TUDO</div>
-      <div class="formula-visual">
-        <span class="formula-op">(</span>
-        <div class="formula-bloco"><span class="formula-valor">Disciplina</span><span class="formula-desc">constância diária</span></div>
-        <span class="formula-op">×</span>
-        <div class="formula-bloco"><span class="formula-valor">Equilíbrio</span><span class="formula-desc">emocional e físico</span></div>
-        <span class="formula-op">)</span>
-        <div class="formula-potencial"><span class="formula-pot-label">potencializado pelo</span><span class="formula-pot-valor">Talento</span></div>
+    <div class="contrast">
+      <div class="contrast-col alone glass-card">
+        <span class="badge badge-muted">Caminhando sozinho</span>
+        <h3>Muita informação, pouca direção</h3>
+        <ul>
+          <li><i data-lucide="x-circle"></i> Acha que saber de futebol é o mesmo que saber de formação</li>
+          <li><i data-lucide="x-circle"></i> Não sabe onde o atleta realmente está no desenvolvimento</li>
+          <li><i data-lucide="x-circle"></i> Decisões de carreira tomadas no impulso e na comparação</li>
+          <li><i data-lucide="x-circle"></i> Sem saber que caminho seguir, nem com quem seguir</li>
+          <li><i data-lucide="x-circle"></i> A formação terceirizada para clubes e empresários</li>
+        </ul>
       </div>
-      <p class="formula-txt">O talento não é o ponto de partida. Ele é o multiplicador do que foi construído. Sem base, o talento vira promessa. Com base, vira carreira.</p>
-      <div class="formula-autor">Referência: A Bola Não Entra por Acaso, Ferran Soriano</div>
+      <div class="contrast-col together glass-card">
+        <span class="badge badge-gold">Na Comunidade</span>
+        <h3>Gestão de carreira, o ano inteiro</h3>
+        <ul>
+          <li><i data-lucide="check-circle-2"></i> Clareza sobre o momento real do atleta</li>
+          <li><i data-lucide="check-circle-2"></i> Um caminho de carreira construído junto com a equipe</li>
+          <li><i data-lucide="check-circle-2"></i> Conexões com clubes e agentes parceiros confiáveis</li>
+          <li><i data-lucide="check-circle-2"></i> A família no controle do processo, sem terceirizar</li>
+          <li><i data-lucide="check-circle-2"></i> Um ciclo contínuo que acompanha cada etapa da evolução</li>
+        </ul>
+      </div>
     </div>
+    <p class="quote-line">Não é um curso. Não é uma assinatura de conteúdo.<br>É um <span>ambiente de desenvolvimento</span>.</p>
   </div>
 </section>
 
 <!-- ================= MÉTODO ================= -->
-<section class="how" id="metodo">
+<section class="sc-section" id="metodo">
   <div class="wrap">
-    <div class="how-head">
-      <div class="label-line"><span class="bar"></span><span>O método</span></div>
-      <h2>Como a Comunidade transforma dúvida em direção</h2>
-      <p>Seis fases que se repetem em ciclo, guiando a família ao longo de toda a jornada do atleta.</p>
+    <div class="section-head">
+      <span class="badge badge-cyan">O método Base de Campeão</span>
+      <h2 class="section-title">A Comunidade começa na fase 3. E segue com você até a 6.</h2>
+      <p class="section-sub">A jornada de toda família de atleta passa por sete fases. A Comunidade é o lugar de quem já despertou, já entendeu o que importa e agora precisa de estrutura.</p>
     </div>
-    <div class="how-steps">
-      <div class="how-step"><div class="how-num">01</div><h3>Despertar</h3><p>A família percebe que não pode terceirizar a formação do atleta e decide se envolver de verdade.</p></div>
-      <div class="how-step"><div class="how-num">02</div><h3>Compreender</h3><p>Entende o que realmente importa em cada fase, saindo do excesso de opinião e da desinformação.</p></div>
-      <div class="how-step"><div class="how-num">03</div><h3>Estruturar</h3><p>Organiza rotina, informações e prioridades em torno do desenvolvimento do atleta.</p></div>
-      <div class="how-step"><div class="how-num">04</div><h3>Personalizar</h3><p>Transforma conhecimento em um plano específico, construído para aquele atleta.</p></div>
-      <div class="how-step"><div class="how-num">05</div><h3>Desenvolver</h3><p>Coloca o plano em prática, com acompanhamento constante dentro e fora de campo.</p></div>
-      <div class="how-step"><div class="how-num">06</div><h3>Evoluir</h3><p>Reavalia o processo, reconhece o progresso e recomeça o ciclo com mais clareza.</p></div>
+    <div class="journey">
+      <div class="jn zero"><div class="n">00</div><div class="t">Dormindo</div></div>
+      <div class="jn"><div class="n">01</div><div class="t">Despertar</div></div>
+      <div class="jn"><div class="n">02</div><div class="t">Compreender</div></div>
+      <div class="jn entry"><span class="jn-flag">Você entra aqui</span><div class="n">03</div><div class="t">Estruturar</div></div>
+      <div class="jn inside"><div class="n">04</div><div class="t">Personalizar</div></div>
+      <div class="jn inside"><div class="n">05</div><div class="t">Desenvolver</div></div>
+      <div class="jn inside"><div class="n">06</div><div class="t">Evoluir</div></div>
+    </div>
+    <div class="journey-bands">
+      <div class="jb before">O caminho até aqui</div>
+      <div class="jb inside"><i data-lucide="repeat"></i> Dentro da Comunidade, em ciclo contínuo</div>
+    </div>
+    <p class="entry-note">Se você já percebeu que não dá para terceirizar a formação e já entendeu que cada fase tem suas prioridades, <b>o próximo passo é estruturar</b>. É aí que a Comunidade entra, e é daí que ela conduz o ciclo até a evolução, recomeçando a cada nova etapa da carreira.</p>
+    <div class="phase-cards">
+      <div class="phase-card glass-card"><div class="pc-n">FASE 03</div><h3>Estruturar</h3><p>Organizar rotina, escola, informações e a trajetória do atleta. O perfil no BDC Scout passa a registrar tudo, e a família entende onde o atleta realmente está.</p><div class="pc-q">Onde meu filho está hoje?</div></div>
+      <div class="phase-card glass-card"><div class="pc-n">FASE 04</div><h3>Personalizar</h3><p>Com a equipe, na mentoria em grupo, o conhecimento vira um caminho de carreira com prioridades claras para o momento daquele atleta.</p><div class="pc-q">Que caminho seguir?</div></div>
+      <div class="phase-card glass-card"><div class="pc-n">FASE 05</div><h3>Desenvolver</h3><p>O caminho é colocado em prática com acompanhamento, aulas ao vivo e encontros com quem vive o futebol, ajustando a rota sem mudar de direção a cada oscilação.</p><div class="pc-q">Com quem seguir?</div></div>
+      <div class="phase-card glass-card"><div class="pc-n">FASE 06</div><h3>Evoluir</h3><p>Reavaliar, reconhecer o progresso e preparar as próximas decisões: categoria, clube, empresário e oportunidades. E o ciclo recomeça, com mais clareza.</p><div class="pc-q">Qual é o próximo passo?</div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= O QUE ESTÁ INCLUÍDO ================= -->
-<section class="inclui grain" id="inclui">
-  <div class="inclui-glow"></div>
+<!-- ================= O QUE FALAMOS ================= -->
+<section class="sc-section alt" id="temas">
   <div class="wrap">
-    <div class="inclui-head">
-      <div class="label-line on-dark"><span class="bar"></span><span>Tudo em um só lugar</span></div>
-      <h2>O que você encontra dentro da Comunidade</h2>
-      <p>Oito entregas que trabalham juntas ao longo do ciclo. Não é conteúdo solto, é um ambiente completo pra você conduzir a carreira do seu filho com direção.</p>
+    <div class="section-head">
+      <span class="badge badge-gold">+40 encontros realizados</span>
+      <h2 class="section-title">O que a gente fala dentro da Comunidade</h2>
+      <p class="section-sub">Um retrato do que já foi tratado nos encontros. O fio condutor de tudo é a gestão de carreira do atleta, com muito Extra Campo.</p>
     </div>
-
-    <div class="feature-list">
-      <div class="feature-row">
-        <div class="feature-icon">🎓</div>
-        <div>
-          <h3>Acesso à Trilha de Formação</h3>
-          <p>O curso "Meu filho quer ser jogador de futebol. E agora?", incluído no seu ciclo. Um caminho sequencial por fase de desenvolvimento: a plataforma identifica a idade do seu filho e te leva direto pro módulo certo, com o que já passou disponível pra consultar e o que vem pela frente já visível.</p>
-          <div class="feature-tags"><span class="feature-tag">Organizado por fase, dos 3 aos 18 anos</span><span class="feature-tag">Você sabe exatamente onde está</span><span class="feature-tag">Acesso imediato</span></div>
-        </div>
+    <div class="topics">
+      <div class="topic lead glass-card">
+        <div class="icon-wrap"><i data-lucide="briefcase"></i></div>
+        <h3>Gestão de carreira</h3>
+        <p>A carreira do atleta tratada como um projeto, com a família no papel de gestora e não de torcedora.</p>
+        <ul><li>A carreira como uma empresa e os pais como gestores</li><li>Planejamento da temporada e metas por fase</li><li>O que não é medido não é melhorado</li><li>O plano individual como rota da carreira</li></ul>
       </div>
-
-      <div class="feature-row">
-        <div class="feature-icon">👥</div>
-        <div>
-          <h3>Comunidade de pais e profissionais</h3>
-          <p>Um grupo exclusivo onde você troca experiência com outros pais vivendo a mesma fase, e conta com profissionais do Base de Campeão por perto pra ajudar quando a dúvida for específica do seu caso.</p>
-          <div class="feature-tags"><span class="feature-tag">Grupo moderado</span><span class="feature-tag">Pais e profissionais juntos</span><span class="feature-tag">Troca em tempo real</span></div>
-        </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="map-pin"></i></div>
+        <h3>Onde o atleta está</h3>
+        <p>Como ler o momento real do atleta, além do placar e da minutagem.</p>
+        <ul><li>Como saber se ele está evoluindo no clube</li><li>O que desenvolver e o que evitar em cada fase</li><li>Maturação e efeito da data de nascimento</li><li>Transição do futsal para o campo</li></ul>
       </div>
-
-      <div class="feature-row">
-        <div class="feature-icon">📅</div>
-        <div>
-          <h3>Encontros ao vivo todo mês, com convidados</h3>
-          <div class="feature-stat"><b>+40</b><span>encontros já realizados</span></div>
-          <p>Conteúdo vivo, que renova toda semana: convidados especialistas, temas de atualidade e aprofundamentos técnicos. É o que mantém a Comunidade em movimento mesmo depois de você concluir a Trilha.</p>
-          <div class="feature-tags"><span class="feature-tag">Convidados especialistas</span><span class="feature-tag">Temas de atualidade</span><span class="feature-tag">Fica gravado</span></div>
-        </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="scale"></i></div>
+        <h3>Mercado e decisões</h3>
+        <p>As decisões de fora do campo que definem trajetórias.</p>
+        <ul><li>Agentes, intermediários e contratos</li><li>Como escolher um empresário e sinais de alerta</li><li>Peneiras e avaliações com critério</li><li>Quando faz sentido mudar de clube</li></ul>
       </div>
-
-      <div class="feature-row">
-        <div class="feature-icon">📇</div>
-        <div>
-          <h3>Perfil do atleta (currículo)</h3>
-          <p>Um currículo desportivo completo do seu filho, com características, clube, posição e melhores momentos em vídeo. Pronto pra ser apresentado no momento em que uma oportunidade real aparecer.</p>
-          <div class="feature-tags"><span class="feature-tag">Currículo desportivo</span><span class="feature-tag">Vídeos e Instagram</span><span class="feature-tag">Sempre atualizado</span></div>
-        </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="activity"></i></div>
+        <h3>Rotina de atleta</h3>
+        <p>O básico bem feito, todos os dias, dentro e fora da temporada.</p>
+        <ul><li>Sono, alimentação e recuperação</li><li>Preparação física e academia na base</li><li>Volume de treino: demais ou de menos</li><li>Férias sem perder a rotina</li></ul>
       </div>
-
-      <div class="feature-row">
-        <div class="feature-icon">📊</div>
-        <div>
-          <h3>Registro de jogo (base de dados)</h3>
-          <p>Uma base de dados real da evolução do seu filho: jogos, minutagem, gols, temporada a temporada. Nada fica só na memória, o histórico existe e cresce junto com ele.</p>
-          <div class="feature-tags"><span class="feature-tag">Jogo a jogo</span><span class="feature-tag">Minutagem e gols</span><span class="feature-tag">Histórico de evolução</span></div>
-        </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="brain"></i></div>
+        <h3>Mente e comportamento</h3>
+        <p>O lado que o futebol brasileiro ainda negligencia na formação.</p>
+        <ul><li>Desafios psicológicos na base</li><li>Perfil comportamental do atleta</li><li>Disciplina e resiliência</li><li>Como o cérebro do atleta aprende</li></ul>
       </div>
-
-      <div class="feature-row">
-        <div class="feature-icon">⚽</div>
-        <div>
-          <h3>Área de oportunidades</h3>
-          <p>Oportunidades reais em clubes, peneiras e avaliações, curadas e publicadas pela equipe do Base de Campeão. Quem está com o perfil em dia é quem sai na frente quando elas aparecem.</p>
-          <div class="feature-tags"><span class="feature-tag">Curadas pela equipe</span><span class="feature-tag">Clubes e peneiras</span><span class="feature-tag">Publicadas na plataforma</span></div>
-        </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="home"></i></div>
+        <h3>Família, valores e finanças</h3>
+        <p>A base de tudo começa dentro de casa.</p>
+        <ul><li>O papel da família na carreira</li><li>Valores, propósito e o sonho de quem</li><li>Planejamento financeiro da família</li><li>Apoiar sem pressionar</li></ul>
       </div>
+    </div>
+    <div class="topics-foot">
+      <span><i data-lucide="mic"></i> Psicólogos do esporte</span>
+      <span><i data-lucide="mic"></i> Especialistas em finanças</span>
+      <span><i data-lucide="mic"></i> Pais que já viveram a base</span>
+      <span><i data-lucide="mic"></i> Ex-atletas e profissionais do futebol</span>
+    </div>
+  </div>
+</section>
 
-      <div class="feature-row">
-        <div class="feature-icon">📘</div>
-        <div>
-          <h3>E-books e manuais</h3>
-          <p>Materiais complementares pra consultar sempre que surgir uma dúvida nova ao longo do ciclo, sem precisar assistir uma aula inteira de novo pra achar a resposta.</p>
-          <div class="feature-tags"><span class="feature-tag">Consulta rápida</span><span class="feature-tag">Complementa a Trilha</span><span class="feature-tag">Sempre disponível</span></div>
-        </div>
+<!-- ================= DIFERENCIAIS ================= -->
+<section class="sc-section" id="diferenciais">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-cyan">O que só a Comunidade tem</span>
+      <h2 class="section-title">Três diferenciais que mudam a formação</h2>
+    </div>
+    <div class="topics">
+      <div class="topic lead glass-card">
+        <div class="icon-wrap"><i data-lucide="sun"></i></div>
+        <h3>Extra Campo</h3>
+        <p>O que acontece fora de campo é o mais importante na formação de um ser humano e de um atleta, e hoje não é abordado nas escolinhas.</p>
+        <ul><li>Rotina, sono e alimentação</li><li>Escola e estudos</li><li>Mente e comportamento</li><li>Valores e finanças da família</li></ul>
       </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="network"></i></div>
+        <h3>Conexões com clubes e agentes parceiros</h3>
+        <p>Relacionamento, conexões e indicações com clubes e agentes parceiros do Base de Campeão, sempre a favor do momento do atleta.</p>
+        <ul><li>Saber com quem seguir</li><li>Indicações quando fizer sentido</li><li>Oportunidades avaliadas com critério</li></ul>
+      </div>
+      <div class="topic glass-card">
+        <div class="icon-wrap"><i data-lucide="shield-check"></i></div>
+        <h3>Família no controle</h3>
+        <p>Saber de futebol não é saber de formação. A família assume a condução do processo, com conhecimento e apoio, em vez de terceirizar para clubes e empresários.</p>
+        <ul><li>Responsabilidade assumida</li><li>Decisões com contexto</li><li>Apoio sem pressão</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="feature-row">
-        <div class="feature-icon">🎯</div>
-        <div>
-          <h3>Contato direto com os profissionais do Base de Campeão</h3>
-          <p>Um canal direto com a equipe pra direcionamento no seu caso específico. Não é resposta genérica, é alguém acompanhando de perto a situação do seu filho.</p>
-          <div class="feature-tags"><span class="feature-tag">Direcionamento personalizado</span><span class="feature-tag">Fala direto com a equipe</span><span class="feature-tag">Acompanhamento próximo</span></div>
-        </div>
+<!-- ================= O QUE TEM DENTRO ================= -->
+<section class="sc-section alt" id="dentro">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-gold">O que tem dentro</span>
+      <h2 class="section-title">Tudo o que a Comunidade entrega</h2>
+      <p class="section-sub">Sete pilares que sustentam a gestão de carreira ao longo do ciclo.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar big glass-card">
+        <div class="icon-wrap"><i data-lucide="users-round"></i></div>
+        <h3>Mentoria em grupo com a equipe do Base de Campeão</h3>
+        <p>O coração da Comunidade. A equipe acompanha de perto o momento e as decisões de carreira de cada atleta e de cada família. É onde o conhecimento vira direção.</p>
+        <div class="chips"><span>Gestão de carreira</span><span>Em grupo</span><span>Com a equipe</span></div>
+      </div>
+      <div class="pillar glass-card">
+        <div class="icon-wrap"><i data-lucide="message-circle"></i></div>
+        <h3>Contato direto com a equipe</h3>
+        <p>Um canal direto para orientação e direcionamento no seu caso, sem resposta genérica.</p>
+        <div class="chips"><span>Direcionamento</span></div>
+      </div>
+      <div class="pillar glass-card">
+        <div class="icon-wrap"><i data-lucide="video"></i></div>
+        <h3>Aulas ao vivo</h3>
+        <p>Temas da formação e da carreira tratados ao vivo, com espaço para perguntas.</p>
+        <div class="chips"><span>Ao vivo</span><span>Com perguntas</span></div>
+      </div>
+      <div class="pillar glass-card">
+        <div class="icon-wrap"><i data-lucide="mic"></i></div>
+        <h3>Encontros com quem viveu o futebol</h3>
+        <div class="stat-pill"><b>+40</b><span>encontros já realizados</span></div>
+        <p>Ex-atletas, atletas e profissionais do esporte contando o que funciona de verdade.</p>
+        <div class="chips"><span>Ex-atletas</span><span>Profissionais</span></div>
+      </div>
+      <div class="pillar glass-card">
+        <div class="icon-wrap"><i data-lucide="heart-handshake"></i></div>
+        <h3>Comunidade de atletas, famílias e profissionais</h3>
+        <p>Troca real com quem está vivendo o mesmo momento da formação e da carreira.</p>
+        <div class="chips"><span>Troca</span><span>Pertencimento</span></div>
+      </div>
+      <div class="pillar big glass-card">
+        <div class="icon-wrap"><i data-lucide="network"></i></div>
+        <h3>Relacionamento, conexões e indicações</h3>
+        <p>Saber com quem seguir é parte da gestão de carreira. A Comunidade aproxima o atleta e a família de clubes e agentes parceiros do Base de Campeão, com indicações quando fizer sentido para o momento do atleta, e cada oportunidade avaliada com critério e contexto.</p>
+        <div class="chips"><span>Clubes parceiros</span><span>Agentes parceiros</span><span>Indicações</span></div>
+      </div>
+      <div class="pillar scout glass-card">
+        <div class="icon-wrap"><i data-lucide="id-card"></i></div>
+        <h3>BDC Scout incluído</h3>
+        <p>O LinkedIn da Bola completo: perfil, currículo, registro de jogo, melhores momentos, área de oportunidades e aulas curtas gravadas.</p>
+        <div class="chips"><span>Plataforma completa</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= TRANSFORMAÇÃO ================= -->
-<section class="transf">
+<section class="sc-section alt">
   <div class="wrap">
-    <div class="transf-head">
-      <div class="label-line"><span class="bar"></span><span>A transformação</span></div>
-      <h2>De pai ansioso a pai consciente.</h2>
-      <p>A Comunidade não muda seu filho. Muda como você acompanha ele. E isso muda tudo.</p>
+    <div class="section-head">
+      <span class="badge badge-gold">A evolução</span>
+      <h2 class="section-title">O que muda ao longo do ciclo</h2>
     </div>
-    <div>
-      <div class="transf-row">
-        <div class="t-antes"><div class="t-lbl">ANTES</div><p>Não sabe se o clube que o filho está é o lugar certo</p></div>
-        <div class="t-sep">→</div>
-        <div class="t-depois"><div class="t-lbl">DEPOIS</div><p>Sabe avaliar o ambiente, a metodologia e os sinais de evolução</p></div>
-      </div>
-      <div class="transf-row">
-        <div class="t-antes"><div class="t-lbl">ANTES</div><p>Pressiona sem perceber, cobra do jeito errado</p></div>
-        <div class="t-sep">→</div>
-        <div class="t-depois"><div class="t-lbl">DEPOIS</div><p>Sabe ser presença, referência e segurança emocional</p></div>
-      </div>
-      <div class="transf-row">
-        <div class="t-antes"><div class="t-lbl">ANTES</div><p>Toma decisões por emoção, comparação e achismo</p></div>
-        <div class="t-sep">→</div>
-        <div class="t-depois"><div class="t-lbl">DEPOIS</div><p>Decide com estratégia, processo e visão de longo prazo</p></div>
-      </div>
-      <div class="transf-row">
-        <div class="t-antes"><div class="t-lbl">ANTES</div><p>O sonho do filho gera tensão e dívida dentro de casa</p></div>
-        <div class="t-sep">→</div>
-        <div class="t-depois"><div class="t-lbl">DEPOIS</div><p>A família vira a maior vantagem competitiva do atleta</p></div>
-      </div>
+    <div class="ba">
+      <div class="ba-row"><div class="ba-antes"><div class="ba-lbl">Antes</div><p>Não sabe se o clube atual é o lugar certo</p></div><div class="ba-sep"><i data-lucide="arrow-right"></i></div><div class="ba-depois"><div class="ba-lbl">Depois</div><p>Sabe avaliar o ambiente, o método e os sinais reais de evolução</p></div></div>
+      <div class="ba-row"><div class="ba-antes"><div class="ba-lbl">Antes</div><p>Cobra do jeito errado sem perceber</p></div><div class="ba-sep"><i data-lucide="arrow-right"></i></div><div class="ba-depois"><div class="ba-lbl">Depois</div><p>Sabe ser presença, referência e segurança emocional</p></div></div>
+      <div class="ba-row"><div class="ba-antes"><div class="ba-lbl">Antes</div><p>Decide por emoção, comparação e achismo</p></div><div class="ba-sep"><i data-lucide="arrow-right"></i></div><div class="ba-depois"><div class="ba-lbl">Depois</div><p>Decide com contexto, processo e visão de longo prazo</p></div></div>
+      <div class="ba-row"><div class="ba-antes"><div class="ba-lbl">Antes</div><p>Não sabe que caminho seguir nem com quem seguir</p></div><div class="ba-sep"><i data-lucide="arrow-right"></i></div><div class="ba-depois"><div class="ba-lbl">Depois</div><p>Tem um caminho de carreira claro e uma rede confiável ao lado</p></div></div>
     </div>
   </div>
 </section>
 
 <!-- ================= DEPOIMENTO ================= -->
-<section class="dep">
+<section class="sc-section">
   <div class="wrap">
-    <div class="dep-card">
-      <div class="dep-aspas">"</div>
-      <p class="txt">Quando entrei no Base de Campeão, eu achava que sabia apoiar meu filho. Com o tempo, entendi que estava criando pressão sem perceber. Mudei a forma de falar, de cobrar, de estar presente. E o Lucas mudou também. Ficou mais confiante, mais leve. A relação entre a gente melhorou demais.</p>
-      <div class="dep-info">
+    <div class="glass-card dep-card">
+      <span class="badge badge-gold">Quem já caminha com a gente</span>
+      <blockquote>"Quando entrei no Base de Campeão, eu achava que sabia apoiar meu filho. Com o tempo, entendi que estava criando pressão sem perceber. Mudei a forma de falar, de cobrar, de estar presente. E o Lucas mudou também. Ficou mais confiante, mais leve. A relação entre a gente melhorou demais."</blockquote>
+      <div class="dep-who">
         <div class="dep-avatar">AF</div>
-        <div class="who"><b>Adriano Farah</b><span>Pai do Lucas · Atleta Sub-14 do São Bernardo · Membro do Base de Campeão</span></div>
+        <div class="t"><b>Adriano Farah</b><span>Pai do Lucas · atleta Sub-14 do São Bernardo</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CRENÇA ================= -->
-<section class="crenca grain">
-  <div class="crenca-glow"></div>
-  <div class="wrap wrap-narrow">
-    <p class="body">Antes de atleta, existe uma criança. E toda criança precisa de uma base sólida, dentro e fora de campo. O futebol pode ser a profissão do seu filho. Mas antes disso, existe algo muito maior: a formação de um ser humano preparado pra vida.</p>
-    <div class="frase">O sonho é do seu filho.<br>Mas a base, <span class="g">essa é sua responsabilidade.</span></div>
+<!-- ================= PARA QUEM ================= -->
+<section class="sc-section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-gold">Para quem é</span>
+      <h2 class="section-title">Para o atleta. E para a família que caminha com ele.</h2>
+    </div>
+    <div class="who-grid">
+      <div class="who-card glass-card">
+        <span class="badge badge-gold"><i data-lucide="users"></i> Atleta menor de idade</span>
+        <h3>A família participa do ciclo</h3>
+        <p>Pais e responsáveis entram na Comunidade para entender cada etapa, decidir com contexto e apoiar o atleta sem transformar a relação em cobrança.</p>
+      </div>
+      <div class="who-card glass-card">
+        <span class="badge badge-cyan"><i data-lucide="user"></i> Atleta maior de idade</span>
+        <h3>O atleta conduz a própria carreira</h3>
+        <p>O atleta participa diretamente, com a equipe por perto para organizar a trajetória, desenvolver competências e avaliar oportunidades.</p>
+      </div>
+    </div>
+    <div class="glass-card notfor">
+      <h4><i data-lucide="alert-circle"></i> A Comunidade não é para quem</h4>
+      <ul>
+        <li>Procura garantia de profissionalização</li>
+        <li>Quer só "arrumar um clube"</li>
+        <li>Busca atalhos em vez de processo</li>
+        <li>Quer terceirizar toda a responsabilidade</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMPARATIVO ================= -->
+<section class="compare-section" style="padding-top: 110px;">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:36px;">
+      <span class="badge badge-cyan">Pra você não confundir</span>
+      <h2 class="section-title">BDC Scout ou Comunidade?</h2>
+      <p class="section-sub">O Scout é a plataforma. A Comunidade é a plataforma mais o Base de Campeão perto de você.</p>
+    </div>
+    <div class="compare-wrap">
+      <table class="compare-table two" style="min-width:520px;">
+        <thead><tr><th>O que você recebe</th><th>BDC Scout</th><th class="hl">Comunidade</th></tr></thead>
+        <tbody>
+          <tr><td>Perfil, currículo, registro de jogo e melhores momentos</td><td class="yes">✓</td><td class="hl yes">✓</td></tr>
+          <tr><td>Área de oportunidades e aulas curtas gravadas</td><td class="yes">✓</td><td class="hl yes">✓</td></tr>
+          <tr><td>Mentoria em grupo com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Aulas ao vivo</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Encontros com ex-atletas, atletas e profissionais do esporte</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Comunidade de atletas, famílias e profissionais</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Contato direto com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Extra Campo: rotina, escola, mente, valores e finanças</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Conexões e indicações com clubes e agentes parceiros</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Formato</td><td>Mensal</td><td class="hl">Anual</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note">Quer só a plataforma? <a href="/scout" style="color: var(--gold-light); font-weight:700; text-decoration:none;">Conheça o BDC Scout</a>. Quer um plano feito só para o seu atleta? Esse é o papel do PDI.</p>
   </div>
 </section>
 
 <!-- ================= OFERTA ================= -->
-<section class="oferta grain" id="oferta">
-  <div class="oferta-glow"></div>
+<section class="sc-section" id="entrar">
   <div class="wrap">
-    <div class="oferta-inner">
-      <span class="oferta-tag">Comunidade de Desenvolvimento · Plano anual</span>
-      <h2>Faça parte agora. Acesso completo por 1 ano.</h2>
-      <p class="sub">A Trilha de Formação completa, mais de 40 encontros especiais já realizados e novos toda semana. Você paga uma vez e tem acesso completo por 12 meses.</p>
-
-      <div class="incluso-list">
-        <div class="incluso-item"><span class="check">✓</span><span><b>Trilha de Formação completa</b>, acesso imediato a todo o conteúdo</span></div>
-        <div class="incluso-item"><span class="check">✓</span><span><b>Novos encontros toda semana</b>, ao vivo e gravado</span></div>
-        <div class="incluso-item"><span class="check">✓</span><span><b>Encontro mensal ao vivo</b>, acompanhamento real com a equipe</span></div>
-        <div class="incluso-item"><span class="check">✓</span><span><b>Perfil e registro de jogos</b> do seu filho, histórico e evolução</span></div>
-        <div class="incluso-item"><span class="check">✓</span><span><b>Banco de oportunidades</b>, peneiras e avaliações em clubes</span></div>
-        <div class="incluso-item"><span class="check">✓</span><span><b>Comunidade de pais e atletas</b>, suporte e troca real</span></div>
+    <div class="glass-card offer">
+      <div class="offer-head">
+        <span class="badge badge-gold">Comunidade de Desenvolvimento · Ciclo anual</span>
+        <h3>Construa a base de verdade, com direção</h3>
+        <p>12 meses de gestão de carreira e evolução, da fase 3 à fase 6, em ciclo contínuo.</p>
       </div>
-
-      <div class="preco-box">
-        <div class="plano">Plano anual</div>
-        <div class="valor">R$ 1.997</div>
-        <div class="cond">pagamento único · acesso por 12 meses</div>
+      <ul class="offer-list">
+        <li><i data-lucide="check"></i> Mentoria em grupo de gestão de carreira</li>
+        <li><i data-lucide="check"></i> Aulas ao vivo</li>
+        <li><i data-lucide="check"></i> Encontros com ex-atletas, atletas e profissionais</li>
+        <li><i data-lucide="check"></i> Comunidade de atletas, famílias e profissionais</li>
+        <li><i data-lucide="check"></i> Contato direto com a equipe</li>
+        <li><i data-lucide="check"></i> Conexões e indicações com clubes e agentes parceiros</li>
+        <li><i data-lucide="check"></i> Conteúdo Extra Campo</li>
+        <li><i data-lucide="check"></i> BDC Scout incluído, completo</li>
+        <li><i data-lucide="check"></i> Materiais complementares e ações exclusivas</li>
+      </ul>
+      <div class="offer-price">
+        <div class="lbl">Ciclo anual</div>
+        <div class="val"><small>R$</small> 1.997</div>
+        <div class="eq">O equivalente a R$ 166,42 por mês ao longo do ciclo</div>
       </div>
-
-      <a href="https://pay.hotmart.com/B106302572G" class="btn btn-gold btn-block btn-lg">Quero entrar no Base de Campeão</a>
-      <div class="oferta-note">Acesso imediato após o pagamento</div>
+      <div class="offer-actions">
+        <!-- LINK DE PAGAMENTO: confirme se este checkout está com o valor de R$ 1.997 -->
+        <a href="https://pay.hotmart.com/B106302572G" class="btn btn-gold js-checkout" data-plano="anual" data-valor="1997.00"><i data-lucide="users"></i> Quero entrar na Comunidade</a>
+        <a href="https://wa.me/5551994143238?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20a%20Comunidade%20de%20Desenvolvimento" class="btn btn-outline" data-gtm="oferta-whatsapp"><i data-lucide="message-circle"></i> Prefiro conversar com a equipe antes</a>
+      </div>
+      <p class="offer-note">Atleta menor de idade: a inscrição é feita pela família.</p>
     </div>
   </div>
 </section>
 
+<!-- ================= FAQ ================= -->
+<section class="sc-section alt" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-cyan">Dúvidas frequentes</span>
+      <h2 class="section-title">Antes de entrar</h2>
+    </div>
+    <div class="faq">
+      <details><summary>O que é a Comunidade de Desenvolvimento?</summary><p>É um ciclo anual de gestão de carreira e evolução em grupo, com a equipe, os profissionais e os parceiros do Base de Campeão. O objetivo é dar clareza: saber onde o atleta está, que caminho seguir e com quem seguir. Reúne mentoria em grupo, aulas ao vivo, encontros, comunidade, contato direto com a equipe e o BDC Scout completo.</p></details>
+      <details><summary>Em que momento faz sentido entrar?</summary><p>Quando a família já despertou e já entendeu que cada fase da formação tem suas prioridades, e agora precisa de estrutura. No método Base de Campeão, essa é a fase 3, Estruturar. A partir dela, a Comunidade conduz o ciclo até a fase 6 e recomeça a cada nova etapa.</p></details>
+      <details><summary>Qual a diferença para o BDC Scout?</summary><p>O BDC Scout é a plataforma: perfil, currículo, registro de jogo, melhores momentos e oportunidades publicadas. A Comunidade inclui o Scout e soma o que a plataforma não tem: gestão de carreira em grupo, aulas ao vivo, encontros, Extra Campo, contato direto com a equipe e conexões com clubes e agentes parceiros.</p></details>
+      <details><summary>É uma mentoria individual?</summary><p>Não. O acompanhamento da Comunidade é em grupo, o que permite aprender também com os casos de outros atletas e famílias. Se o objetivo é um plano feito só para o seu atleta, o produto indicado é o PDI, Plano de Desenvolvimento Individual.</p></details>
+      <details><summary>A Comunidade garante uma oportunidade ou vaga em clube?</summary><p>Não. Ninguém sério pode garantir isso. A oportunidade é uma das etapas da gestão de carreira, não o ponto de partida. A Comunidade prepara o atleta e a família para avaliar cada oportunidade com critério e pode indicar atletas a clubes e agentes parceiros quando fizer sentido. O Base de Campeão não negocia, não representa atletas e não atua como intermediário.</p></details>
+      <details><summary>Meu filho é menor de idade. Quem participa?</summary><p>A família. Pais e responsáveis fazem a inscrição e participam do ciclo, porque são eles que tomam as decisões junto com o atleta.</p></details>
+      <details><summary>E se eu não puder participar de um encontro ao vivo?</summary><p>Os encontros ficam gravados para quem não conseguir participar na hora.</p></details>
+      <details><summary>Por quanto tempo vale o acesso?</summary><p>O ciclo é anual: 12 meses de acompanhamento a partir da entrada.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final-cta">
+  <div class="wrap wrap-narrow">
+    <span class="badge badge-gold">Fazer um futebol melhor, com melhores pessoas</span>
+    <h2>Clareza para decidir. <span class="hl-gold">Direção para evoluir.</span></h2>
+    <p>Um ano inteiro de gestão de carreira com o Base de Campeão perto de você, em cada fase, decisão e próximo passo.</p>
+    <a href="#entrar" class="btn btn-gold" data-gtm="final-entrar"><i data-lucide="users"></i> Quero fazer parte da Comunidade</a>
+  </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
-<footer class="site">
+<footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+        <p style="font-size: 0.9rem; line-height: 1.6;">Gestão de carreira para o novo futebol. Fazer um futebol melhor, com melhores pessoas.</p>
+      </div>
       <div>
-        <div class="footer-brand"><img src="/logo-128.webp" alt="Base de Campeão"></div>
-        <p style="font-size:13.5px; color:#5d7889; max-width: 260px;">Educação e desenvolvimento para famílias de atletas de futebol de base.</p>
+        <h4>Programas</h4>
+        <ul class="footer-links">
+          <li><a href="/comunidade">Comunidade de Desenvolvimento</a></li>
+          <li><a href="/scout">BDC Scout</a></li>
+          <li><a href="https://pdi.basedecampeao.com.br">PDI</a></li>
+          <li><a href="https://basedecampeao.com.br/bdc-insight">Formando Campeões</a></li>
+          <li><a href="/#escolinhas">Para Escolinhas</a></li>
+        </ul>
       </div>
-      <div class="footer-col">
-        <h5>PRODUTOS</h5>
-        <a href="/comunidade">Comunidade de Desenvolvimento</a>
-        <a href="/trilha">Trilha de Formação</a>
-        <a href="/pdi">PDI</a>
-        <a href="/formando-campeoes">Formando Campeões</a>
-        <a href="/escolinhas">Para Escolinhas</a>
+      <div>
+        <h4>Base de Campeão</h4>
+        <ul class="footer-links">
+          <li><a href="/">Página inicial</a></li>
+          <li><a href="/#metodo">O método em 6 fases</a></li>
+          <li><a href="https://go.hotmart.com/B107484794B">Manuais do Campeão</a></li>
+        </ul>
       </div>
-      <div class="footer-col">
-        <h5>BASE DE CAMPEÃO</h5>
-        <a href="/#como-funciona">Como funciona</a>
-        <a href="#">Podcast</a>
-        <a href="#">Sobre</a>
-      </div>
-      <div class="footer-col">
-        <h5>FALE COM A GENTE</h5>
-        <a href="#">Instagram</a>
-        <a href="#">WhatsApp</a>
+      <div>
+        <h4>Fale com a gente</h4>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5551994143238?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20Comunidade%20de%20Desenvolvimento"><i data-lucide="message-square"></i> WhatsApp</a></li>
+          <li><a href="https://instagram.com/basedecampeao"><i data-lucide="camera"></i> @basedecampeao</a></li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">© 2026 Base de Campeão. Todos os direitos reservados.</div>
   </div>
 </footer>
 
+<!-- ================= CTA FIXO (MOBILE) ================= -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sp"><b>Comunidade de Desenvolvimento</b>Ciclo anual de acompanhamento</div>
+  <a href="#entrar" class="btn btn-gold" data-gtm="sticky-entrar">Quero entrar</a>
+</div>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function track(ev, data) { window.dataLayer.push(Object.assign({ event: ev }, data || {})); }
+  function renderIcons() { if (window.lucide) lucide.createIcons(); }
+  document.addEventListener('DOMContentLoaded', renderIcons);
+
+  const header = document.getElementById('header');
+  const sticky = document.getElementById('sticky-cta');
+  const oferta = document.getElementById('entrar');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+    const r = oferta.getBoundingClientRect();
+    const naArea = r.top < window.innerHeight && r.bottom > 0;
+    sticky.classList.toggle('show', window.scrollY > 600 && !naArea);
+  }, { passive: true });
+
+  (function () {
+    const canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    window.addEventListener('resize', resize); resize();
+    const ps = Array.from({ length: 40 }, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, s: Math.random() * 2 + 1, vx: (Math.random() - .5) * .45, vy: (Math.random() - .5) * .45, o: Math.random() * .45 + .1 }));
+    function frame() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ps.forEach(p => {
+        if (!reduce) { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > canvas.width) p.vx *= -1; if (p.y < 0 || p.y > canvas.height) p.vy *= -1; }
+        ctx.fillStyle = `rgba(219, 167, 65, ${p.o})`; ctx.beginPath(); ctx.arc(p.x, p.y, p.s, 0, Math.PI * 2); ctx.fill();
+      });
+      if (!reduce) requestAnimationFrame(frame);
+    }
+    frame();
+  })();
+
+  document.querySelectorAll('.js-checkout').forEach(a => a.addEventListener('click', () => {
+    track('begin_checkout', { produto: 'Comunidade de Desenvolvimento', plano: a.dataset.plano, value: parseFloat(a.dataset.valor), currency: 'BRL' });
+  }));
+  document.querySelectorAll('[data-gtm]').forEach(a => a.addEventListener('click', () => track('cta_click', { cta: a.dataset.gtm })));
+  document.querySelectorAll('.faq details').forEach(d => d.addEventListener('toggle', () => { if (d.open) track('faq_aberta', { pergunta: d.querySelector('summary').innerText }); }));
+</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Categorias de Base: orientação para pais de atletas | Base de Campeão</title>
+<title>Categorias de Base: gestão de carreira para o novo futebol | Base de Campeão</title>
 <meta name="description" content="Seu filho joga nas categorias de base? O Base de Campeão orienta a família em cada fase da formação do atleta, dos 3 aos 18 anos: peneiras, clubes, escola, contratos e carreira.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://basedecampeao.com.br/">
@@ -15,14 +15,14 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Base de Campeão">
 <meta property="og:title" content="A família do atleta não precisa caminhar no escuro | Base de Campeão">
-<meta property="og:description" content="Educação, diagnóstico e acompanhamento para pais de atletas das categorias de base.">
+<meta property="og:description" content="Gestão de carreira para o novo futebol. Fazer um futebol melhor, com melhores pessoas.">
 <meta property="og:url" content="https://basedecampeao.com.br/">
 <meta property="og:image" content="https://basedecampeao.com.br/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="A família do atleta não precisa caminhar no escuro | Base de Campeão">
-<meta name="twitter:description" content="Educação, diagnóstico e acompanhamento para pais de atletas das categorias de base.">
+<meta name="twitter:description" content="Gestão de carreira para o novo futebol. Fazer um futebol melhor, com melhores pessoas.">
 <meta name="twitter:image" content="https://basedecampeao.com.br/og-image.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -41,7 +41,8 @@
   "name": "Base de Campeão",
   "url": "https://basedecampeao.com.br/",
   "logo": "https://basedecampeao.com.br/logo-512.png",
-  "description": "Educação, diagnóstico e acompanhamento para famílias de atletas das categorias de base do futebol.",
+  "description": "Gestão de carreira para o novo futebol: educação, desenvolvimento e orientação para atletas e famílias das categorias de base.",
+  "slogan": "Fazer um futebol melhor, com melhores pessoas.",
   "sameAs": [
    "https://www.instagram.com/basedecampeao/"
   ],
@@ -363,6 +364,33 @@
   .dep-who b { display: block; color: #FFF; }
   .dep-who span { font-size: 0.85rem; color: var(--text-muted); }
 
+  /* SABER DE FUTEBOL x FORMAÇÃO */
+  .formacao-section { padding: 110px 0; position: relative; z-index: 2; background: linear-gradient(180deg, var(--navy-main) 0%, var(--navy-surface) 100%); border-top: 1px solid var(--border-glass); }
+  .know-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 10px 0 40px; }
+  .know { padding: 30px 26px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.02); position: relative; }
+  .know:first-child { border-radius: var(--radius-md) 0 0 var(--radius-md); }
+  .know:last-child { border-radius: 0 var(--radius-md) var(--radius-md) 0; border-color: var(--border-gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.9) 60%); }
+  .know .lvl { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 10px; }
+  .know:last-child .lvl { color: var(--gold-light); }
+  .know h3 { font-size: 1.6rem; color: #FFF; margin-bottom: 10px; line-height: 1.05; }
+  .know p { font-size: 0.93rem; color: var(--text-muted); }
+  .know .neq { position: absolute; right: -16px; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border-radius: 50%; background: var(--navy-main); border: 1px solid var(--border-gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-weight: 800; z-index: 2; }
+  .terceiriza { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center; padding: 36px; }
+  .terceiriza h3 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); color: #FFF; margin: 12px 0; line-height: 1.05; }
+  .terceiriza p { color: var(--text-muted); }
+  .terceiriza .control { padding: 26px; border-radius: var(--radius-md); border: 1px solid var(--border-gold); background: rgba(219,167,65,0.08); text-align: center; }
+  .terceiriza .control i, .terceiriza .control svg { color: var(--gold); width: 34px; height: 34px; margin: 0 auto 10px; display: block; }
+  .terceiriza .control b { display: block; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.6rem; color: #FFF; line-height: 1.05; }
+  .terceiriza .control span { font-size: 0.88rem; color: var(--text-muted); }
+  .manifesto-tag { margin-top: 18px; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 800; color: #FFF; }
+  .manifesto-tag span { color: var(--gold); }
+  @media (max-width: 900px) {
+    .know-steps { grid-template-columns: 1fr; gap: 14px; }
+    .know, .know:first-child, .know:last-child { border-radius: var(--radius-md); }
+    .know .neq { right: auto; left: 50%; top: auto; bottom: -24px; transform: translateX(-50%); }
+    .terceiriza { grid-template-columns: 1fr; padding: 26px; }
+  }
+
   /* MANIFESTO */
   .manifesto-section { padding: 130px 0; text-align: center; position: relative; z-index: 2; background: radial-gradient(circle at 50% 50%, rgba(219,167,65,0.08) 0%, transparent 55%); }
   .manifesto-quote { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.9rem, 3.6vw, 2.9rem); font-weight: 700; color: #FFF; line-height: 1.2; margin: 20px 0 30px; }
@@ -493,7 +521,7 @@
 <section class="hero-section">
   <div class="wrap hero-grid">
     <div>
-      <span class="badge badge-gold"><i data-lucide="shield-check"></i> Orientação para famílias de atletas</span>
+      <span class="badge badge-gold"><i data-lucide="shield-check"></i> Gestão de carreira para o novo futebol</span>
       <h1 class="hero-title">A família do atleta não precisa <span class="highlight">caminhar no escuro</span></h1>
       <p class="hero-subtitle">Educação, diagnóstico e acompanhamento contínuo para pais de atletas das categorias de base. Para que a família tome melhores decisões durante toda a formação esportiva, educacional e humana do atleta.</p>
       <div style="display: flex; gap: 16px; flex-wrap: wrap;">
@@ -606,6 +634,30 @@
           <p>Tenha o currículo esportivo pronto e critérios claros antes de assinar qualquer coisa.</p></div>
         <div class="expand-btn">Ver orientação <i data-lucide="arrow-right"></i></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SABER DE FUTEBOL x FORMAÇÃO ================= -->
+<section class="formacao-section" id="formacao">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-gold">Uma verdade incômoda</span>
+      <h2 class="section-title">Saber de futebol não é saber de formação</h2>
+      <p class="section-sub">Muitos pais acham que sabem conduzir a carreira do filho porque entendem de futebol. Mas na base, quase sempre, estamos falando de crianças que ainda não são atletas e que provavelmente não terão o futebol como profissão.</p>
+    </div>
+    <div class="know-steps">
+      <div class="know"><div class="lvl">O que muitos pais sabem</div><h3>Futebol</h3><p>Entender o jogo, opinar sobre escalação, saber o que é um bom passe. Isso é o futebol adulto, visto da arquibancada.</p><span class="neq">≠</span></div>
+      <div class="know"><div class="lvl">O que poucos sabem</div><h3>Futebol de base</h3><p>Categorias, maturação, idade relativa, peneiras, clubes, agentes. Um ambiente com regras próprias e muitas armadilhas.</p><span class="neq">≠</span></div>
+      <div class="know"><div class="lvl">O que realmente importa</div><h3>Formação</h3><p>Formar uma pessoa em desenvolvimento: rotina, escola, mente, valores e decisões de carreira tomadas com contexto, em cada fase.</p></div>
+    </div>
+    <div class="glass-card terceiriza">
+      <div>
+        <span class="badge badge-muted">O erro histórico do nosso futebol</span>
+        <h3>A formação sempre foi terceirizada</h3>
+        <p>Por décadas, a família entregou o processo para clubes e empresários e ficou na arquibancada. Parte do cenário que vemos hoje no futebol brasileiro é consequência direta disso. A mudança começa quando a família entende e assume a sua responsabilidade na formação.</p>
+      </div>
+      <div class="control"><i data-lucide="shield-check"></i><b>Família no controle</b><span>Com conhecimento e apoio, sem terceirizar a formação.</span></div>
     </div>
   </div>
 </section>
@@ -754,12 +806,12 @@
         <div>
           <div class="card-top"><span class="badge badge-gold">Mais completo</span><span class="format-tag">Ciclo anual</span></div>
           <h3>Comunidade de Desenvolvimento</h3>
-          <p class="desc">Um ciclo anual de desenvolvimento em grupo, com o Base de Campeão perto de você. BDC Scout incluído.</p>
+          <p class="desc">Um ciclo anual de gestão de carreira em grupo, com o Base de Campeão perto de você. BDC Scout incluído.</p>
           <ul class="feature-list">
-            <li><i data-lucide="check"></i> Mentoria em grupo com a equipe</li>
-            <li><i data-lucide="check"></i> Aulas ao vivo</li>
-            <li><i data-lucide="check"></i> Encontros com ex-atletas, atletas e profissionais do esporte</li>
-            <li><i data-lucide="check"></i> Oportunidades trabalhadas de perto, com parceiros</li>
+            <li><i data-lucide="check"></i> Mentoria em grupo de gestão de carreira</li>
+            <li><i data-lucide="check"></i> Aulas ao vivo e encontros com ex-atletas e profissionais</li>
+            <li><i data-lucide="check"></i> Extra Campo: rotina, escola, mente e valores</li>
+            <li><i data-lucide="check"></i> Conexões e indicações com clubes e agentes parceiros</li>
           </ul>
         </div>
         <a href="/comunidade" class="btn btn-outline" style="width: 100%;" data-gtm="card-comunidade"><i data-lucide="users"></i> Conhecer a Comunidade</a>
@@ -780,18 +832,20 @@
         <a href="https://pdi.basedecampeao.com.br" class="btn btn-outline" style="width: 100%;" data-gtm="card-pdi"><i data-lucide="user-check"></i> Conhecer o PDI</a>
       </div>
 
-      <!-- Formando Laterais -->
+      <!-- Formando Campeões -->
       <div class="product-card glass-card hoverable featured" data-category="atletas">
         <div>
           <div class="card-top"><span class="badge badge-cyan">Para o atleta 13+</span><span class="format-tag">Turma por posição</span></div>
-          <h3>Formando Laterais</h3>
-          <p class="desc">Formação coletiva por posição. Leitura de jogo, tomada de decisão e autonomia dentro da função, em turma com outros laterais.</p>
+          <h3>Formando Campeões</h3>
+          <p class="desc">Formação coletiva por posição, em quatro turmas. Leitura de jogo, tomada de decisão e autonomia dentro da função, junto com atletas da mesma posição.</p>
           <div class="posicoes">
-            <span class="pos on">Turma de laterais em andamento</span>
-            <span class="pos off">Novas posições em breve</span>
+            <span class="pos on">Formando Laterais · em andamento</span>
+            <span class="pos off">Formando Defensores · fila de espera</span>
+            <span class="pos off">Formando Meias · fila de espera</span>
+            <span class="pos off">Formando Atacantes · fila de espera</span>
           </div>
         </div>
-        <a href="https://basedecampeao.com.br/bdc-insight" class="btn btn-outline" style="margin-top: 22px; align-self: flex-start;" data-gtm="card-formando"><i data-lucide="users"></i> Conhecer o Formando Laterais</a>
+        <a href="https://basedecampeao.com.br/bdc-insight" class="btn btn-outline" style="margin-top: 22px; align-self: flex-start;" data-gtm="card-formando"><i data-lucide="users"></i> Conhecer o Formando Campeões</a>
       </div>
 
       <!-- Escolinhas -->
@@ -838,7 +892,8 @@
           <tr><td>Encontros com ex-atletas, atletas e profissionais do esporte</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Comunidade de atletas, famílias e profissionais</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Contato direto com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
-          <tr><td>Oportunidades trabalhadas de perto, com parceiros</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Extra Campo: rotina, escola, mente, valores e finanças</td><td class="no">×</td><td class="hl yes">✓</td></tr>
+          <tr><td>Conexões e indicações com clubes e agentes parceiros</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Formato</td><td>Mensal</td><td class="hl">Anual</td></tr>
         </tbody>
       </table>
@@ -885,6 +940,7 @@
     <blockquote class="manifesto-quote">Não prometemos um caminho fácil.<br>Prometemos ajudar a família a <span style="color: var(--gold);">enxergar o caminho</span>.</blockquote>
     <p>Nenhum atleta deveria depender apenas da sorte, da ansiedade ou da falta de informação para construir sua trajetória. Educação não é um plano B para quem não chega ao profissional. É parte da formação do atleta desde o primeiro dia.</p>
     <p class="manifesto-final">Base de Campeão, porque a família do atleta não precisa caminhar no escuro.</p>
+    <p class="manifesto-tag">Fazer um futebol melhor, <span>com melhores pessoas.</span></p>
   </div>
 </section>
 
@@ -894,7 +950,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
-        <p style="font-size: 0.9rem; line-height: 1.6;">Educação, diagnóstico e acompanhamento para famílias de atletas de futebol de base.</p>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Gestão de carreira para o novo futebol. Fazer um futebol melhor, com melhores pessoas.</p>
       </div>
       <div>
         <h4>Programas</h4>
@@ -902,7 +958,7 @@
           <li><a href="/comunidade">Comunidade de Desenvolvimento</a></li>
           <li><a href="/scout">BDC Scout</a></li>
           <li><a href="https://pdi.basedecampeao.com.br">PDI</a></li>
-          <li><a href="https://basedecampeao.com.br/bdc-insight">Formando Laterais</a></li>
+          <li><a href="https://basedecampeao.com.br/bdc-insight">Formando Campeões</a></li>
           <li><a href="#escolinhas">Para Escolinhas</a></li>
         </ul>
       </div>
@@ -987,7 +1043,7 @@
     scout:      { nome: 'BDC Scout', link: '/scout' },
     comunidade: { nome: 'Comunidade de Desenvolvimento', link: '/comunidade' },
     pdi:        { nome: 'PDI', link: 'https://pdi.basedecampeao.com.br' },
-    formando:   { nome: 'Formando Laterais', link: 'https://basedecampeao.com.br/bdc-insight' }
+    formando:   { nome: 'Formando Campeões', link: 'https://basedecampeao.com.br/bdc-insight' }
   };
 
   // Simulador
@@ -1026,7 +1082,7 @@
 
   // Método
   const FASES = [
-    { badge: 'Fase 0 · Ponto de partida', title: 'Dormindo', desc: 'O pai que acha que sabe o que está fazendo. Leva no treino, assiste aos jogos, investe tempo e dinheiro, mas decide no achismo, na comparação com outros pais e na opinião de quem está por perto. Tudo parece estar certo, e é justamente por isso que ninguém questiona nada.', acao: 'Ainda não existe uma ação consciente. A família reage aos acontecimentos, confiando que o clube e o talento vão resolver o caminho sozinhos.', sinal: 'Cobrança no carro depois do jogo, troca de clube por impulso, investimento em treino extra sem saber o que o atleta realmente precisa, e a certeza de que "está tudo sob controle".' },
+    { badge: 'Fase 0 · Ponto de partida', title: 'Dormindo', desc: 'O pai que acha que sabe. Entende de futebol, mas não de futebol de base, e muito menos de formação. Leva no treino, assiste aos jogos, investe tempo e dinheiro, mas decide no achismo, na comparação com outros pais e na opinião de quem está por perto. Tudo parece estar certo, e é justamente por isso que ninguém questiona nada.', acao: 'Ainda não existe uma ação consciente. A família reage aos acontecimentos, confiando que o clube e o talento vão resolver o caminho sozinhos.', sinal: 'Cobrança no carro depois do jogo, troca de clube por impulso, investimento em treino extra sem saber o que o atleta realmente precisa, e a certeza de que "está tudo sob controle".' },
     { badge: 'Fase 1 de 6', title: 'Despertar', desc: 'A família percebe que não pode terceirizar a formação do atleta. Assume um papel ativo no processo, entendendo que a sua postura é parte da base de tudo.', acao: 'Alinhar expectativas dentro de casa e decidir buscar conhecimento antes de tomar novas decisões.', sinal: 'A primeira pergunta honesta: "será que estou fazendo isso do jeito certo?".' },
     { badge: 'Fase 2 de 6', title: 'Compreender', desc: 'Entender o que realmente importa em cada fase da formação. Separar maturação biológica de talento e filtrar falsas promessas de agentes e empresários.', acao: 'Aprender a ler o momento real do atleta sem cair na ansiedade precoce.', sinal: 'A família para de comparar o filho com os outros e começa a olhar para a fase dele.' },
     { badge: 'Fase 3 de 6', title: 'Estruturar', desc: 'Organizar rotina, alimentação, sono, escola e informações do atleta, sem transformar a casa em um ambiente de cobrança.', acao: 'Montar uma rotina única de treinos, jogos e estudos, e começar a registrar a trajetória.', sinal: 'A trajetória do atleta deixa de estar só na memória e passa a estar organizada.' },
