@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://basedecampeao.com.br/sitemap.xml
+Sitemap: https://novobdc.basedecampeao.com.br/sitemap.xml

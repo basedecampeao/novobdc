@@ -9,21 +9,21 @@
 <title>Comunidade de Desenvolvimento | Gestão de carreira para atletas e famílias | Base de Campeão</title>
 <meta name="description" content="Saber onde o atleta está, que caminho seguir e com quem seguir. Um ciclo anual de gestão de carreira e evolução em grupo com a equipe do Base de Campeão. BDC Scout incluído.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://basedecampeao.com.br/comunidade">
+<link rel="canonical" href="https://novobdc.basedecampeao.com.br/comunidade">
 <meta name="theme-color" content="#031B2E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Base de Campeão">
 <meta property="og:title" content="Comunidade de Desenvolvimento | Base de Campeão">
 <meta property="og:description" content="Gestão de carreira, clareza e evolução contínua para atletas e famílias, com o Base de Campeão perto de você.">
-<meta property="og:url" content="https://basedecampeao.com.br/comunidade">
-<meta property="og:image" content="https://basedecampeao.com.br/og-image.jpg">
+<meta property="og:url" content="https://novobdc.basedecampeao.com.br/comunidade">
+<meta property="og:image" content="https://novobdc.basedecampeao.com.br/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Comunidade de Desenvolvimento | Base de Campeão">
 <meta name="twitter:description" content="Gestão de carreira, clareza e evolução contínua para atletas e famílias.">
-<meta name="twitter:image" content="https://basedecampeao.com.br/og-image.jpg">
+<meta name="twitter:image" content="https://novobdc.basedecampeao.com.br/og-image.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -40,16 +40,19 @@
   "name": "Comunidade de Desenvolvimento",
   "description": "Ciclo anual de gestão de carreira e evolução em grupo para atletas e famílias, com mentoria em grupo, aulas ao vivo, encontros, rede de profissionais e BDC Scout incluído.",
   "brand": { "@type": "Brand", "name": "Base de Campeão" },
-  "image": "https://basedecampeao.com.br/og-image.jpg",
-  "url": "https://basedecampeao.com.br/comunidade",
-  "offers": { "@type": "Offer", "name": "Ciclo anual", "price": "1997.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://basedecampeao.com.br/comunidade#entrar" }
+  "image": "https://novobdc.basedecampeao.com.br/og-image.jpg",
+  "url": "https://novobdc.basedecampeao.com.br/comunidade",
+  "offers": [
+   { "@type": "Offer", "name": "Plano mensal", "price": "227.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://novobdc.basedecampeao.com.br/comunidade#entrar" },
+   { "@type": "Offer", "name": "Plano anual (12x de R$ 166)", "price": "1992.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://novobdc.basedecampeao.com.br/comunidade#entrar" }
+  ]
  },
  {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-   { "@type": "ListItem", "position": 1, "name": "Base de Campeão", "item": "https://basedecampeao.com.br/" },
-   { "@type": "ListItem", "position": 2, "name": "Comunidade de Desenvolvimento", "item": "https://basedecampeao.com.br/comunidade" }
+   { "@type": "ListItem", "position": 1, "name": "Base de Campeão", "item": "https://novobdc.basedecampeao.com.br/" },
+   { "@type": "ListItem", "position": 2, "name": "Comunidade de Desenvolvimento", "item": "https://novobdc.basedecampeao.com.br/comunidade" }
   ]
  }
 ]
@@ -707,7 +710,7 @@
   .notfor li::before { content: "×"; color: #FF8A8A; font-weight: 800; }
 
   /* oferta */
-  .offer { max-width: 760px; margin: 0 auto; padding: 44px; border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.92) 55%); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 50px var(--gold-glow); }
+  .offer { max-width: 860px; margin: 0 auto; padding: 44px; border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.92) 55%); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 50px var(--gold-glow); }
   .offer-head { text-align: center; }
   .offer-head h3 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: #FFF; margin: 14px 0 8px; }
   .offer-head p { color: var(--text-muted); }
@@ -721,6 +724,11 @@
   .offer-price .eq { font-size: 0.95rem; color: var(--gold-light); font-weight: 700; }
   .offer-actions { display: grid; gap: 12px; }
   .offer-actions .btn { width: 100%; }
+  .cm-plans { max-width: none; gap: 18px; }
+  .cm-plans .plan { padding: 28px; }
+  .cm-plans .plan .price .val { font-size: 3.2rem; }
+  .cm-plans .plan .equiv { margin-bottom: 22px; }
+  .cm-plans .plan .btn { margin-top: auto; }
   .offer-note { text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; }
 
   .sticky-cta .btn { white-space: nowrap; flex-shrink: 0; }
@@ -792,6 +800,12 @@
     .offer-price .val { font-size: 3.4rem; }
     .cycle-legend { grid-template-columns: 1fr; }
   }
+  /* ÁREA DO ALUNO */
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+  .aluno-link { display: inline-flex; align-items: center; gap: 7px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.04); color: var(--text-main); font-size: 0.88rem; font-weight: 700; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
+  .aluno-link:hover { border-color: var(--border-gold); color: #FFF; background: rgba(255,255,255,0.08); }
+  .aluno-link i, .aluno-link svg { width: 16px; height: 16px; }
+  @media (max-width: 640px) { .aluno-link span { display: none; } .aluno-link { padding: 10px 12px; } }
 </style>
 </head>
 <body>
@@ -815,6 +829,7 @@
       <li><a href="#faq">Dúvidas</a></li>
     </ul>
     <div class="nav-actions">
+      <a href="https://www.basedecampeao.com.br/members-area" class="aluno-link" data-gtm="nav-area-aluno" aria-label="Área do aluno"><i data-lucide="log-in"></i><span>Área do aluno</span></a>
       <a href="#entrar" class="btn btn-gold" data-gtm="nav-entrar"><i data-lucide="users"></i><span>Entrar<span class="long"> na Comunidade</span></span></a>
     </div>
   </div>
@@ -834,7 +849,7 @@
       <div class="hero-proof">
         <div><b>+2.500</b>famílias orientadas</div>
         <div><b>+40</b>encontros ao vivo realizados</div>
-        <div><b>12 meses</b>de acompanhamento</div>
+        <div><b>Fases 3 a 6</b>em ciclo contínuo</div>
       </div>
     </div>
 
@@ -1161,7 +1176,7 @@
           <tr><td>Contato direto com a equipe do Base de Campeão</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Extra Campo: rotina, escola, mente, valores e finanças</td><td class="no">×</td><td class="hl yes">✓</td></tr>
           <tr><td>Conexões e indicações com clubes e agentes parceiros</td><td class="no">×</td><td class="hl yes">✓</td></tr>
-          <tr><td>Formato</td><td>Mensal</td><td class="hl">Anual</td></tr>
+          <tr><td>Formato</td><td>Mensal ou trimestral</td><td class="hl">Mensal ou anual</td></tr>
         </tbody>
       </table>
     </div>
@@ -1174,9 +1189,9 @@
   <div class="wrap">
     <div class="glass-card offer">
       <div class="offer-head">
-        <span class="badge badge-gold">Comunidade de Desenvolvimento · Ciclo anual</span>
+        <span class="badge badge-gold">Comunidade de Desenvolvimento · Escolha seu plano</span>
         <h3>Construa a base de verdade, com direção</h3>
-        <p>12 meses de gestão de carreira e evolução, da fase 3 à fase 6, em ciclo contínuo.</p>
+        <p>Gestão de carreira e evolução em grupo, da fase 3 à fase 6, em ciclo contínuo. Os dois planos dão acesso a tudo.</p>
       </div>
       <ul class="offer-list">
         <li><i data-lucide="check"></i> Mentoria em grupo de gestão de carreira</li>
@@ -1189,16 +1204,27 @@
         <li><i data-lucide="check"></i> BDC Scout incluído, completo</li>
         <li><i data-lucide="check"></i> Materiais complementares e ações exclusivas</li>
       </ul>
-      <div class="offer-price">
-        <div class="lbl">Ciclo anual</div>
-        <div class="val"><small>R$</small> 1.997</div>
-        <div class="eq">O equivalente a R$ 166,42 por mês ao longo do ciclo</div>
+      <div class="plans cm-plans">
+        <div class="plan glass-card">
+          <h3>Mensal</h3>
+          <p class="plan-desc">Para começar o ciclo com flexibilidade.</p>
+          <div class="price"><span class="cur">R$</span><span class="val">227</span><span class="per">/mês</span></div>
+          <div class="equiv">&nbsp;</div>
+          <a href="https://pay.hotmart.com/A107846364J?off=h9r2uxxv" class="btn btn-outline js-checkout" data-plano="mensal" data-valor="227.00"><i data-lucide="arrow-right"></i> Assinar o plano mensal</a>
+        </div>
+        <div class="plan glass-card best">
+          <span class="plan-flag">Melhor escolha</span>
+          <h3>Anual</h3>
+          <p class="plan-desc">O ciclo completo, da fase 3 à fase 6.</p>
+          <div class="price"><span class="cur">12x R$</span><span class="val">166</span></div>
+          <div class="equiv">R$ 61 a menos por mês que o plano mensal</div>
+          <a href="https://pay.hotmart.com/A107846364J" class="btn btn-gold js-checkout" data-plano="anual" data-valor="1992.00"><i data-lucide="arrow-right"></i> Assinar o plano anual</a>
+        </div>
       </div>
-      <div class="offer-actions">
-        <a href="https://pay.hotmart.com/A107846364J" class="btn btn-gold js-checkout" data-plano="anual" data-valor="1997.00"><i data-lucide="users"></i> Quero entrar na Comunidade</a>
+      <div class="offer-actions" style="margin-top: 22px;">
         <a href="https://wa.me/5551996917344?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20a%20Comunidade%20de%20Desenvolvimento" class="btn btn-outline" data-gtm="oferta-whatsapp"><i data-lucide="message-circle"></i> Prefiro conversar com a equipe antes</a>
       </div>
-      <p class="offer-note">Atleta menor de idade: a inscrição é feita pela família.</p>
+      <p class="offer-note">Os dois planos incluem todas as entregas acima. Atleta menor de idade: a inscrição é feita pela família.</p>
     </div>
   </div>
 </section>
@@ -1218,7 +1244,7 @@
       <details><summary>A Comunidade garante uma oportunidade ou vaga em clube?</summary><p>Não. Ninguém sério pode garantir isso. A oportunidade é uma das etapas da gestão de carreira, não o ponto de partida. A Comunidade prepara o atleta e a família para avaliar cada oportunidade com critério e pode indicar atletas a clubes e agentes parceiros quando fizer sentido. O Base de Campeão não negocia, não representa atletas e não atua como intermediário.</p></details>
       <details><summary>Meu filho é menor de idade. Quem participa?</summary><p>A família. Pais e responsáveis fazem a inscrição e participam do ciclo, porque são eles que tomam as decisões junto com o atleta.</p></details>
       <details><summary>E se eu não puder participar de um encontro ao vivo?</summary><p>Os encontros ficam gravados para quem não conseguir participar na hora.</p></details>
-      <details><summary>Por quanto tempo vale o acesso?</summary><p>O ciclo é anual: 12 meses de acompanhamento a partir da entrada.</p></details>
+      <details><summary>Qual a diferença entre o plano mensal e o anual?</summary><p>As entregas são as mesmas nos dois. No mensal você paga R$ 227 por mês. No anual você entra no ciclo completo de 12 meses, em 12x de R$ 166, o que dá R$ 61 a menos por mês.</p></details>
     </div>
   </div>
 </section>
@@ -1254,6 +1280,7 @@
       <div>
         <h4>Base de Campeão</h4>
         <ul class="footer-links">
+          <li><a href="https://www.basedecampeao.com.br/members-area"><i data-lucide="log-in"></i> Área do aluno</a></li>
           <li><a href="/">Página inicial</a></li>
           <li><a href="/#metodo">O método em 6 fases</a></li>
           <li><a href="https://desenvolvimento.basedecampeao.com.br/">Manuais do Campeão</a></li>
@@ -1273,7 +1300,7 @@
 
 <!-- ================= CTA FIXO (MOBILE) ================= -->
 <div class="sticky-cta" id="sticky-cta">
-  <div class="sp"><b>Comunidade de Desenvolvimento</b>Ciclo anual de acompanhamento</div>
+  <div class="sp"><b>Comunidade de Desenvolvimento</b>A partir de 12x de R$ 166</div>
   <a href="#entrar" class="btn btn-gold" data-gtm="sticky-entrar">Quero entrar</a>
 </div>
 

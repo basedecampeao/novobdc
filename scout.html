@@ -9,21 +9,21 @@
 <title>BDC Scout: o LinkedIn da Bola | Currículo esportivo do atleta | Base de Campeão</title>
 <meta name="description" content="Perfil, currículo esportivo, registro de jogo, melhores momentos e área de oportunidades em um só lugar. O BDC Scout é o LinkedIn da Bola. Planos a partir de R$ 45,67 por mês.">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://basedecampeao.com.br/scout">
+<link rel="canonical" href="https://novobdc.basedecampeao.com.br/scout">
 <meta name="theme-color" content="#031B2E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Base de Campeão">
 <meta property="og:title" content="BDC Scout: o LinkedIn da Bola">
 <meta property="og:description" content="Toda a trajetória do atleta em um perfil pronto pra ser visto. Currículo, registro de jogo, melhores momentos e oportunidades.">
-<meta property="og:url" content="https://basedecampeao.com.br/scout">
-<meta property="og:image" content="https://basedecampeao.com.br/og-image.jpg">
+<meta property="og:url" content="https://novobdc.basedecampeao.com.br/scout">
+<meta property="og:image" content="https://novobdc.basedecampeao.com.br/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BDC Scout: o LinkedIn da Bola">
 <meta name="twitter:description" content="Toda a trajetória do atleta em um perfil pronto pra ser visto.">
-<meta name="twitter:image" content="https://basedecampeao.com.br/og-image.jpg">
+<meta name="twitter:image" content="https://novobdc.basedecampeao.com.br/og-image.jpg">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -40,19 +40,19 @@
   "name": "BDC Scout",
   "description": "Plataforma onde o atleta organiza o currículo esportivo, registra jogos, reúne melhores momentos e encontra oportunidades. O LinkedIn da Bola.",
   "brand": { "@type": "Brand", "name": "Base de Campeão" },
-  "image": "https://basedecampeao.com.br/og-image.jpg",
-  "url": "https://basedecampeao.com.br/scout",
+  "image": "https://novobdc.basedecampeao.com.br/og-image.jpg",
+  "url": "https://novobdc.basedecampeao.com.br/scout",
   "offers": [
-   { "@type": "Offer", "name": "Plano mensal", "price": "59.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://basedecampeao.com.br/scout#planos" },
-   { "@type": "Offer", "name": "Plano trimestral", "price": "137.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://basedecampeao.com.br/scout#planos" }
+   { "@type": "Offer", "name": "Plano mensal", "price": "59.90", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://novobdc.basedecampeao.com.br/scout#planos" },
+   { "@type": "Offer", "name": "Plano trimestral", "price": "137.00", "priceCurrency": "BRL", "availability": "https://schema.org/InStock", "url": "https://novobdc.basedecampeao.com.br/scout#planos" }
   ]
  },
  {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-   { "@type": "ListItem", "position": 1, "name": "Base de Campeão", "item": "https://basedecampeao.com.br/" },
-   { "@type": "ListItem", "position": 2, "name": "BDC Scout", "item": "https://basedecampeao.com.br/scout" }
+   { "@type": "ListItem", "position": 1, "name": "Base de Campeão", "item": "https://novobdc.basedecampeao.com.br/" },
+   { "@type": "ListItem", "position": 2, "name": "BDC Scout", "item": "https://novobdc.basedecampeao.com.br/scout" }
   ]
  }
 ]
@@ -611,6 +611,12 @@
     .game-table th:nth-child(2), .game-table td:nth-child(2) { display: none; }
     footer.site-footer { padding-bottom: 110px; }
   }
+  /* ÁREA DO ALUNO */
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+  .aluno-link { display: inline-flex; align-items: center; gap: 7px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.04); color: var(--text-main); font-size: 0.88rem; font-weight: 700; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
+  .aluno-link:hover { border-color: var(--border-gold); color: #FFF; background: rgba(255,255,255,0.08); }
+  .aluno-link i, .aluno-link svg { width: 16px; height: 16px; }
+  @media (max-width: 640px) { .aluno-link span { display: none; } .aluno-link { padding: 10px 12px; } }
 </style>
 </head>
 <body>
@@ -634,6 +640,7 @@
       <li><a href="#faq">Dúvidas</a></li>
     </ul>
     <div class="nav-actions">
+      <a href="https://www.basedecampeao.com.br/members-area" class="aluno-link" data-gtm="nav-area-aluno" aria-label="Área do aluno"><i data-lucide="log-in"></i><span>Área do aluno</span></a>
       <a href="#planos" class="btn btn-gold" data-gtm="nav-planos"><i data-lucide="id-card"></i><span>Assinar<span class="long"> o Scout</span></span></a>
     </div>
   </div>
@@ -1023,6 +1030,7 @@
       <div>
         <h4>Base de Campeão</h4>
         <ul class="footer-links">
+          <li><a href="https://www.basedecampeao.com.br/members-area"><i data-lucide="log-in"></i> Área do aluno</a></li>
           <li><a href="/">Página inicial</a></li>
           <li><a href="/#metodo">O método em 6 fases</a></li>
           <li><a href="https://desenvolvimento.basedecampeao.com.br/">Manuais do Campeão</a></li>
